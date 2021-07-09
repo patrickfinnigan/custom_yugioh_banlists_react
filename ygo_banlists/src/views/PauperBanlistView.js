@@ -4,11 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 //Local Imports
-import MainNavBar from "../../components/GeneralComponents/MainNavBar.js";
-import BudgetBanlist from "../../components/BudgetBanlist/BudgetBanlist.js";
-// import "./BudgetBanlistView.scss";
+import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
+import PauperBanlist from "../components/PauperBanlist/PauperBanlist.js";
+// import "./PauperBanlistView.scss";
 
-export default function BudgetBanlistView() {
+export default function PauperBanlistView() {
   return (
     <div>
       <header>
@@ -17,7 +17,7 @@ export default function BudgetBanlistView() {
       <Container>
         <Row>
           <Col>
-            <BudgetBanlist />
+            <PauperBanlist />
           </Col>
         </Row>
       </Container>

@@ -9,16 +9,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './stylesheets/main.scss'
 
 // Views
-import BudgetBanlistView from "./views/BudgetBanlistView/BudgetBanlistView.js"
-import PauperBanlistView from "./views/PauperBanlistView/PauperBanlistView.js"
+import BudgetBanlistView from "./views/BudgetBanlistView.js"
+import PauperBanlistView from "./views/PauperBanlistView.js"
+import TestView from "./views/TestView.js"
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
+
       <Route path="/budget-banlist" component={BudgetBanlistView} />
       <Route path="/pauper-banlist" component={PauperBanlistView} />
+      <Route path="/test-page" component={TestView} />
       <Route path="/" component={BudgetBanlistView} />
     </Switch>
   </Router>,

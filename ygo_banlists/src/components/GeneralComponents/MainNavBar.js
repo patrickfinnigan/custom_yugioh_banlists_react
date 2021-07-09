@@ -2,9 +2,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from 'react-bootstrap/Container'
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import Button from "react-bootstrap/Button";
 
 export default function MainNavBar() {
   return (
@@ -16,6 +13,7 @@ export default function MainNavBar() {
           <Nav className="me-auto">
             <Nav.Link href="/budget-banlist">Budget Banlist</Nav.Link>
             <Nav.Link href="/pauper-banlist">Pauper Banlist</Nav.Link>
+            <Nav.Link href="/test-page">Test Page</Nav.Link>
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/">Action</NavDropdown.Item>
               <NavDropdown.Item href="/">

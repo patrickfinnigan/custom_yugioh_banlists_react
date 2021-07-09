@@ -2,8 +2,8 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 import BudgetBanlistLable from "./BudgetBanlistLable.js";
-import EffectMonsters from "./EffectMonsters.js";
 import NormalMonsters from "./NormalMonsters.js";
+import EffectMonsters from "./EffectMonsters.js";
 import FusionMonsters from "./FusionMonsters.js";
 import LinkMonsters from "./LinkMonsters.js";
 import SynchroMonsters from "./SynchroMonsters.js";
