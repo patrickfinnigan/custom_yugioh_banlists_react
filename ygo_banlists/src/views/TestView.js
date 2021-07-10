@@ -11,36 +11,38 @@ import Card from "react-bootstrap/Card";
 //Local Imports
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
 import TestPage from "../components/TestComponents/TestPage.js";
+import BudgetListCall from "../services/ygopro_axios_budget_call.js"
 
 export default function TestView() {
+  const name = "Dark Magician";
   const startprice = 0.5;
   const endprice = 99999.99;
-
   const [data, setData] = useState([]);
 
-  const ygoproURL = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
-
   useEffect(() => {
-    const ygoproEndpoint =
-      // ygoproURL + "?startprice=" + startprice + "&endprice=" + endprice;
-      ygoproURL + "?name=Slime%20Toad";
-
-    const getCardData = async () => {
-      axios
-        .get(`${ygoproEndpoint}`)
-        .then((response) => {
-          const cardData = response.data;
-          setData(cardData);
-          console.log(cardData);
-          console.log(cardData.name);
-        })
-        .catch((error) => console.error(`Error: ${error}`));
-    };
-    getCardData();
+    getCardDataByName(name)
+      .then(({ data }) => {
+        setData(data.data);
+      })
+      .catch((error) => console.error(`Error: ${error}`));
   }, []);
 
-  //   const name = 'Dark%20Magician'
-  // const type = 'Effect%20Monster'
+  // It was recommended to move this into a service file, and exposing methods for the endpoints I want to reach
+  
+  function getCardDataByName(name, startprice, endprice) {
+    const ygoproURL = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
+    let ygoproEndpoint = `${ygoproURL}?name=${name}`;
+
+    if (startprice) {
+      ygoproEndpoint += `&startprice=${startprice}`;
+    }
+
+    if (endprice) {
+      ygoproEndpoint += `&endprice=${endprice}`;
+    }
+
+    return axios.get(ygoproEndpoint);
+  }
 
   return (
     <div>
@@ -61,13 +63,44 @@ export default function TestView() {
               <Card.Body>
                 <div className="user-container">
                   <h5>If this works there should be API data down here</h5>
-                  <h5 className="info-item">{JSON.stringify(data.name, null, 2)}</h5>
+                  <div className="App">
+                    {data ? data.map((el) => TradingCard(el)) : null}
+                    <pre>{JSON.stringify(data, null, 2)}</pre>
+                  </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
         </Row>
       </Container>
+    </div>
+  );
+}
+function TradingCard({ name, type, desc, atk, def, level, race }) {
+  return (
+    <div>
+      <dl>
+        <dt>Name:</dt>
+        <dd>{name}</dd>
+
+        <dt>Type:</dt>
+        <dd>{type}</dd>
+
+        <dt>Description:</dt>
+        <dd>{desc}</dd>
+
+        <dt>Attack:</dt>
+        <dd>{atk}</dd>
+
+        <dt>Deferense:</dt>
+        <dd>{def}</dd>
+
+        <dt>Level:</dt>
+        <dd>{level}</dd>
+
+        <dt>Race:</dt>
+        <dd>{race}</dd>
+      </dl>
     </div>
   );
 }

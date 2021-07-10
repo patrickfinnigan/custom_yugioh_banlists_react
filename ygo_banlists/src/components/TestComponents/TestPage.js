@@ -13,12 +13,6 @@ import NormalMonsters from "./NormalMonsters.js";
 
 
 export default function TestPage() {
-  
-
-
-
-
-
   return (
     <>
       <Card>
