@@ -13,6 +13,9 @@ import TrapCards from "./TrapCards.js";
 
 
 export default function BudgetBanlist() {
+
+  //ADD API CALLS HERE
+
   return (
     <>
       <Card>
@@ -21,6 +24,7 @@ export default function BudgetBanlist() {
             <BudgetBanlistLable />
             <tbody>
               <NormalMonsters />
+              {/* <NormalMonsters name={name} /> */}
               <EffectMonsters />
               <FusionMonsters />
               <LinkMonsters />

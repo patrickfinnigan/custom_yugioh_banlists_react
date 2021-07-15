@@ -7,20 +7,34 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Table from "react-bootstrap/Table";
 
 //Local Imports
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
 import TestPage from "../components/TestComponents/TestPage.js";
-import BudgetListCall from "../services/ygopro_axios_budget_call.js"
+import BudgetBanlistLable from "../components/BudgetBanlist/BudgetBanlistLable.js";
+// import NormalMonsters from "../components/BudgetBanlist/NormalMonsters.js";
+import NormalMonsters from "../components/TestComponents/NormalMonsters.js";
+
+import BudgetListCall from "../services/ygopro_axios_budget_call.js";
 
 export default function TestView() {
-  const name = "Dark Magician";
-  const startprice = 0.5;
+  // for the Banned cards, or all cards more than $5. The limited section for cards more than $1 will come later
+  // const name = "Dark Magician";
+  const startprice = 5.0;
   const endprice = 99999.99;
   const [data, setData] = useState([]);
 
+  // how to apply api names to these values?
+  let name = data.name;
+  let type = data.type;
+
+  console.log(name);
+
+  let price_array = [];
+
   useEffect(() => {
-    getCardDataByName(name)
+    getCardDataByPrice(startprice, endprice)
       .then(({ data }) => {
         setData(data.data);
       })
@@ -28,10 +42,10 @@ export default function TestView() {
   }, []);
 
   // It was recommended to move this into a service file, and exposing methods for the endpoints I want to reach
-  
-  function getCardDataByName(name, startprice, endprice) {
+
+  function getCardDataByPrice(startprice, endprice) {
     const ygoproURL = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
-    let ygoproEndpoint = `${ygoproURL}?name=${name}`;
+    let ygoproEndpoint = `${ygoproURL}?startprice=${startprice}&endprice=${endprice}`;
 
     if (startprice) {
       ygoproEndpoint += `&startprice=${startprice}`;
@@ -44,6 +58,23 @@ export default function TestView() {
     return axios.get(ygoproEndpoint);
   }
 
+  // most of the code used to convert money values of each api entry
+
+  let min_price = Math.min(...price_array);
+  let max_price = Math.max(...price_array);
+
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 2,
+  });
+
+  let min_price_usd = formatter.format(min_price);
+  let max_price_usd = formatter.format(max_price);
+
+  console.log(name);
+  console.log(min_price);
+
   return (
     <div>
       <header>
@@ -52,17 +83,31 @@ export default function TestView() {
       <Container>
         <Row>
           <Col>
-            <TestPage />
-          </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row>
-          <Col>
             <Card>
               <Card.Body>
                 <div className="user-container">
-                  <h5>If this works there should be API data down here</h5>
+                  <Table bordered>
+                    <BudgetBanlistLable />
+                    <tbody>
+                      {data
+                        ? data.map((el) => (
+                            <NormalMonsters
+                              name={name}
+                              min_price={min_price_usd}
+                              max_price={max_price_usd}
+                              type={type}
+                            />
+                          ))
+                        : null}
+                      {/* <EffectMonsters /> */}
+                      {/* <FusionMonsters /> */}
+                      {/* <LinkMonsters /> */}
+                      {/* <SynchroMonsters /> */}
+                      {/* <XYZMonsters /> */}
+                      {/* <SpellCards /> */}
+                      {/* <TrapCards /> */}
+                    </tbody>
+                  </Table>
                   <div className="App">
                     {data ? data.map((el) => TradingCard(el)) : null}
                     <pre>{JSON.stringify(data, null, 2)}</pre>

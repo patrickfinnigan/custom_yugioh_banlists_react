@@ -1,8 +1,8 @@
 import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
-import BudgetBanlistLable from "./BudgetBanlistLable.js";
-import NormalMonsters from "./NormalMonsters.js";
+// import BudgetBanlistLable from "./BudgetBanlistLable.js";
+// import NormalMonsters from "./NormalMonsters.js";
 // import EffectMonsters from "./EffectMonsters.js";
 // import FusionMonsters from "./FusionMonsters.js";
 // import LinkMonsters from "./LinkMonsters.js";
@@ -18,9 +18,9 @@ export default function TestPage() {
       <Card>
         <Card.Body>
           <Table bordered>
-            <BudgetBanlistLable />
+            {/* <BudgetBanlistLable /> */}
             <tbody>
-              <NormalMonsters />
+              {/* <NormalMonsters /> */}
               {/* <EffectMonsters /> */}
               {/* <FusionMonsters /> */}
               {/* <LinkMonsters /> */}
