@@ -15,6 +15,7 @@ import TestPage from "../components/TestComponents/TestPage.js";
 import BudgetBanlistLable from "../components/BudgetBanlist/BudgetBanlistLable.js";
 // import NormalMonsters from "../components/BudgetBanlist/NormalMonsters.js";
 import NormalMonsters from "../components/TestComponents/NormalMonsters.js";
+import EffectMonsters from "../components/TestComponents/EffectMonsters.js";
 
 import BudgetListCall from "../services/ygopro_axios_budget_call.js";
 
@@ -24,14 +25,6 @@ export default function TestView() {
   const startprice = 5.0;
   const endprice = 99999.99;
   const [data, setData] = useState([]);
-
-  // how to apply api names to these values?
-  let name = data.name;
-  let type = data.type;
-
-  console.log(name);
-
-  let price_array = [];
 
   useEffect(() => {
     getCardDataByPrice(startprice, endprice)
@@ -60,20 +53,40 @@ export default function TestView() {
 
   // most of the code used to convert money values of each api entry
 
-  let min_price = Math.min(...price_array);
-  let max_price = Math.max(...price_array);
+  function maxPrice(card) {
+    let { card_sets } = card;
+
+    if (card_sets === undefined) {
+      return 0;
+    }
+
+    let maxPrice = Math.max(
+      ...card_sets.map((set) => parseFloat(set.set_price))
+    );
+
+    return formatter.format(maxPrice);
+  }
+
+  function minPrice(card) {
+    let { card_sets } = card;
+
+    if (card_sets === undefined) {
+      return 0;
+    }
+
+    let minPrice = Math.min(
+      ...card_sets.map((set) => parseFloat(set.set_price))
+    );
+
+    return formatter.format(minPrice);
+  }
+  // console.log(minPrice);
 
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
     minimumFractionDigits: 2,
   });
-
-  let min_price_usd = formatter.format(min_price);
-  let max_price_usd = formatter.format(max_price);
-
-  console.log(name);
-  console.log(min_price);
 
   return (
     <div>
@@ -90,12 +103,22 @@ export default function TestView() {
                     <BudgetBanlistLable />
                     <tbody>
                       {data
-                        ? data.map((el) => (
+                        ? data.map((card) => (
                             <NormalMonsters
-                              name={name}
-                              min_price={min_price_usd}
-                              max_price={max_price_usd}
-                              type={type}
+                              name={card.name}
+                              min_price={minPrice(card)}
+                              max_price={maxPrice(card)}
+                              type={card.type}
+                            />
+                          ))
+                        : null}
+                      {data
+                        ? data.map((card) => (
+                            <EffectMonsters
+                              name={card.name}
+                              min_price={minPrice(card)}
+                              max_price={maxPrice(card)}
+                              type={card.type}
                             />
                           ))
                         : null}
@@ -109,7 +132,7 @@ export default function TestView() {
                     </tbody>
                   </Table>
                   <div className="App">
-                    {data ? data.map((el) => TradingCard(el)) : null}
+                    {data ? data.map((card) => TradingCard(card)) : null}
                     <pre>{JSON.stringify(data, null, 2)}</pre>
                   </div>
                 </div>

@@ -1,14 +1,14 @@
-export default function NormalMonsters({
+export default function EffectMonsters({
   name,
   type,
   desc,
-  min_price, 
+  min_price,
   max_price,
   level,
   race,
 }) {
   return (
-    <tr className={["normal_monster"]}>
+    <tr className={["effect_monster"]}>
       <th className={["normal-weight-text"]}>{type}</th>
       <th className={["normal-weight-text"]}>{name}</th>
       <th className={["normal-weight-text"]}>Forbidden</th>
