@@ -1,4 +1,4 @@
-export default function EffectMonsters({
+export default function SpellCards({
   type,
   name,
   status,
@@ -6,7 +6,7 @@ export default function EffectMonsters({
   max_price,
 }) {
   return (
-    <tr className={["effect_monster"]}>
+    <tr className={["spell_card"]}>
       <th className={["normal-weight-text"]}>{type}</th>
       <th className={["normal-weight-text"]}>{name}</th>
       <th className={["normal-weight-text"]}>{status}</th>
