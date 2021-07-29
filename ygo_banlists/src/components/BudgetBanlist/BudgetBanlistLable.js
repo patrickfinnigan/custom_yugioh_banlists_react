@@ -6,7 +6,6 @@ export default function BudgetBanlistLable() {
         <th>Card Name</th>
         <th>Budget Format</th>
         <th>Min Price</th>
-        <th>Max Price</th>
       </tr>
     </thead>
   );

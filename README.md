@@ -4,11 +4,11 @@ Sticking the YGO Banlist customs in a React Bootstrap environment
 
 ### To Dos
 
-- Determine how to handle card entries that violate the cuurrent F/L threshholds (ex. cards that show up with a minPrice of more than $5 are still showing up on the Limited section of the list)
+- Try adding the actual F/L listed cards in the mix
+- Remove quotes from name entries like "Infernoble Arms - Durendal" (thats the only card thats like that so not a big deal)
+- Start on Pauper Banlist
 
-- Remove quotes from name entries like "Infernoble Arms - Durendal"
+### Future Plans
 
-- Figure out why some API entries return with "0.00" in their set_price values, including the following:
-  - Red Dragon Archfiend/Assault Mode
-  - Dragonmaid Hospitality
-  - Toon Bookmark
+- Add PDF download capability to snapshot tournament lists 
+- Include method to commit card IDs to text file to include custom banlists for online simulators like EDO and Omega

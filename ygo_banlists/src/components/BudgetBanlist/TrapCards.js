@@ -1,12 +1,16 @@
-export default function TrapCards() {
-    return (
-      <tr className={["trap_card"]}>
-        <th className={["normal-weight-text"]}>Effect</th>
-        <th className={["normal-weight-text"]} >Terrible Trap</th>
-        <th className={["normal-weight-text"]}>Forbidden</th>
-        <th className={["normal-weight-text"]}>$0.00</th>
-        <th className={["normal-weight-text"]}>$9999.99</th>
-      </tr>
-    );
-  }
-  
+export default function TrapCards({
+  type,
+  name,
+  status,
+  min_price, 
+  max_price,
+}) {
+  return (
+    <tr className={["trap_card"]}>
+      <th className={["normal-weight-text"]}>{type}</th>
+      <th className={["normal-weight-text"]}>{name}</th>
+      <th className={["normal-weight-text"]}>{status}</th>
+      <th className={["normal-weight-text"]}>{min_price}</th>
+    </tr>
+  );
+}

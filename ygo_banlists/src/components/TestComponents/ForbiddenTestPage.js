@@ -1,96 +1,56 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-// import TestRenderer from 'react-test-renderer';
 
 //Bootstrap imports
 import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-// import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
-import BudgetBanlistLable from "./BudgetBanlistLable.js";
-// import NormalMonsters from "./NormalMonsters.js";
-import NormalMonsters from "./NormalMonsters.js";
-import EffectMonsters from "./EffectMonsters.js";
-import SpellCards from "./SpellCards.js";
+import BudgetBanlistLable from "../BudgetBanlist/BudgetBanlistLable.js";
+import NormalMonsters from "../BudgetBanlist/NormalMonsters.js";
+import EffectMonsters from "../BudgetBanlist/EffectMonsters.js";
+import FusionMonsters from "../BudgetBanlist/FusionMonsters.js";
+import LinkMonsters from "../BudgetBanlist/LinkMonsters.js";
+import SpellCards from "../BudgetBanlist/SpellCards.js";
+import SynchroMonsters from "../BudgetBanlist/SynchroMonsters.js";
+import XYZMonsters from "../BudgetBanlist/XYZMonsters.js";
+import TrapCards from "../BudgetBanlist/TrapCards.js";
 
-// import BudgetListCall from "../services/ygopro_axios_budget_call.js";
+import { YGoService } from "../../services/ygopro_axios.js";
 
 export default function ForbiddenTestPage() {
-  // for the Banned cards, or all cards more than $5. The limited section for cards more than $1 will come later
-  // You can make a separate component for the limited $1 and above from the forbidden $5 or above by making two api calls for each section
-
-  // const name = "Dark Magician";
-  const startprice = 5.00;
+  const startprice = 5.01;
   const endprice = 99999.99;
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    getCardDataByPrice(startprice, endprice)
-      .then(({ data }) => {
-        setData(data.data);
+    YGoService.getCardInfo()
+      .then((info) => {
+        setData(info);
       })
       .catch((error) => console.error(`Error: ${error}`));
   }, []);
 
-  // It was recommended to move this into a service file, and exposing methods for the endpoints I want to reach
-
-  function getCardDataByPrice(startprice, endprice) {
-    const ygoproURL = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
-    let ygoproEndpoint = `${ygoproURL}?startprice=${startprice}&endprice=${endprice}`;
-
-    if (startprice) {
-      ygoproEndpoint += `&startprice=${startprice}`;
-    }
-
-    if (endprice) {
-      ygoproEndpoint += `&endprice=${endprice}`;
-    }
-
-    return axios.get(ygoproEndpoint);
-  }
-
   // most of the code used to convert money values of each api entry
-
-  function maxPrice(card) {
-    let { card_sets } = card;
-
-    if (card_sets === undefined) {
-      return true;
-    }
-
-    let maxPrice = Math.max(
-      ...card_sets
-
-        .filter(
-          (set) =>
-            set.set_price !== "0.00" &&
-            set.set_price !== "0" &&
-            set.set_price !== 0
-        )
-        .map((set) => parseFloat(set.set_price))
-    );
-
-    return formatter.format(maxPrice);
-  }
 
   function minPrice(card) {
     let { card_sets } = card;
+    let { card_prices } = card;
 
     if (card_sets === undefined) {
-      return true;
+      return;
     }
 
     let minPrice = Math.min(
-      ...card_sets
-        .filter(
-          (set) =>
-            set.set_price !== "0.00" &&
-            set.set_price !== "0" &&
-            set.set_price !== 0
-        )
-        .map((set) => parseFloat(set.set_price))
+      ...card_prices
+        .filter((set) => set.tcgplayer_price !== "0.00")
+        .map((set) => parseFloat(set.tcgplayer_price))
     );
+
+    if (minPrice <= startprice) {
+      return;
+    } else if (minPrice >= endprice) {
+      return;
+    }
 
     return formatter.format(minPrice);
   }
@@ -105,57 +65,147 @@ export default function ForbiddenTestPage() {
     <>
       <Card>
         <Card.Body>
-        <h2>Forbidden: Cards {formatter.format(startprice)} and above</h2>
+          <h2>Forbidden: Cards {formatter.format(startprice)} and above</h2>
           <div className="user-container">
             <Table bordered>
               <BudgetBanlistLable />
               <tbody>
                 {data
                   ? data
-                      .filter((card) => card.type === "Normal Monster")
+                      .filter(
+                        (card) =>
+                          card.type === "Normal Monster" &&
+                          card.card_sets !== undefined &&
+                          minPrice(card) !== undefined
+                      )
                       .map((card) => (
                         <NormalMonsters
                           type={card.type}
                           name={card.name}
                           status="Forbidden"
                           min_price={minPrice(card)}
-                          max_price={maxPrice(card)}
                         />
                       ))
                   : null}
                 {data
                   ? data
-                      .filter((card) => card.type === "Effect Monster")
+                      .filter(
+                        (card) =>
+                          card.type === "Effect Monster" &&
+                          card.card_sets !== undefined &&
+                          minPrice(card) !== undefined
+                      )
                       .map((card) => (
                         <EffectMonsters
                           type={card.type}
                           name={card.name}
                           status="Forbidden"
                           min_price={minPrice(card)}
-                          max_price={maxPrice(card)}
                         />
                       ))
                   : null}
                 {data
                   ? data
-                      .filter((card) => card.type === "Spell Card")
+                      .filter(
+                        (card) =>
+                          card.type === "Fusion Monster" &&
+                          card.card_sets !== undefined &&
+                          minPrice(card) !== undefined
+                      )
+                      .map((card) => (
+                        <FusionMonsters
+                          type={card.type}
+                          name={card.name}
+                          status="Forbidden"
+                          min_price={minPrice(card)}
+                        />
+                      ))
+                  : null}
+                {data
+                  ? data
+                      .filter(
+                        (card) =>
+                          card.type === "Link Monster" &&
+                          card.card_sets !== undefined &&
+                          minPrice(card) !== undefined
+                      )
+                      .map((card) => (
+                        <LinkMonsters
+                          type={card.type}
+                          name={card.name}
+                          status="Forbidden"
+                          min_price={minPrice(card)}
+                        />
+                      ))
+                  : null}
+                {data
+                  ? data
+                      .filter(
+                        (card) =>
+                          card.type === "Synchro Monster" &&
+                          card.card_sets !== undefined &&
+                          minPrice(card) !== undefined
+                      )
+                      .map((card) => (
+                        <SynchroMonsters
+                          type={card.type}
+                          name={card.name}
+                          status="Forbidden"
+                          min_price={minPrice(card)}
+                        />
+                      ))
+                  : null}
+                {data
+                  ? data
+                      .filter(
+                        (card) =>
+                          card.type === "XYZ Monster" &&
+                          card.card_sets !== undefined &&
+                          minPrice(card) !== undefined
+                      )
+                      .map((card) => (
+                        <XYZMonsters
+                          type={card.type}
+                          name={card.name}
+                          status="Forbidden"
+                          min_price={minPrice(card)}
+                        />
+                      ))
+                  : null}
+                {data
+                  ? data
+                      .filter(
+                        (card) =>
+                          card.type === "Spell Card" &&
+                          card.card_sets !== undefined &&
+                          minPrice(card) !== undefined
+                      )
                       .map((card) => (
                         <SpellCards
                           type={card.type}
                           name={card.name}
                           status="Forbidden"
                           min_price={minPrice(card)}
-                          max_price={maxPrice(card)}
                         />
                       ))
                   : null}
-                {/* <EffectMonsters /> */}
-                {/* <FusionMonsters /> */}
-                {/* <LinkMonsters /> */}
-                {/* <SynchroMonsters /> */}
-                {/* <XYZMonsters /> */}
-                {/* <SpellCards /> */}
-                {/* <TrapCards /> */}
+                {data
+                  ? data
+                      .filter(
+                        (card) =>
+                          card.type === "Trap Card" &&
+                          card.card_sets !== undefined &&
+                          minPrice(card) !== undefined
+                      )
+                      .map((card) => (
+                        <TrapCards
+                          type={card.type}
+                          name={card.name}
+                          status="Forbidden"
+                          min_price={minPrice(card)}
+                        />
+                      ))
+                  : null}
               </tbody>
             </Table>
             <div className="App">
