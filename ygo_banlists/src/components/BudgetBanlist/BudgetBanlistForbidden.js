@@ -5,20 +5,20 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import BudgetBanlistLable from "../BudgetBanlist/BudgetBanlistLable.js";
-import NormalMonsters from "../BudgetBanlist/NormalMonsters.js";
-import EffectMonsters from "../BudgetBanlist/EffectMonsters.js";
-import FusionMonsters from "../BudgetBanlist/FusionMonsters.js";
-import LinkMonsters from "../BudgetBanlist/LinkMonsters.js";
-import SpellCards from "../BudgetBanlist/SpellCards.js";
-import SynchroMonsters from "../BudgetBanlist/SynchroMonsters.js";
-import XYZMonsters from "../BudgetBanlist/XYZMonsters.js";
-import TrapCards from "../BudgetBanlist/TrapCards.js";
+import BudgetBanlistLable from "./BudgetBanlistLable.js";
+import NormalMonsters from "./NormalMonsters.js";
+import EffectMonsters from "./EffectMonsters.js";
+import FusionMonsters from "./FusionMonsters.js";
+import LinkMonsters from "./LinkMonsters.js";
+import SynchroMonsters from "./SynchroMonsters.js";
+import XYZMonsters from "./XYZMonsters.js";
+import SpellCards from "./SpellCards.js";
+import TrapCards from "./TrapCards.js";
 
 import { YGoService } from "../../services/ygopro_axios.js";
 
-export default function ForbiddenTestPage() {
-  const startprice = 5.01;
+export default function BudgetBanlistForbidden() {
+  const startprice = 10;
   const endprice = 99999.99;
   const [data, setData] = useState([]);
 
