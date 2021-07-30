@@ -29,7 +29,7 @@ export default function MainNavBar() {
           <Nav>
             <Nav.Link href="/">More deets</Nav.Link>
             <Nav.Link eventKey={2} href="/">
-              NIGHTMARE!
+              AAA!
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
