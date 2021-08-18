@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import BudgetBanlistLable from "./BudgetBanlistLable.js";
+import PauperBanlistLable from "./PauperBanlistLable.js";
 import NormalMonsters from "./NormalMonsters.js";
 import EffectMonsters from "./EffectMonsters.js";
 import FusionMonsters from "./FusionMonsters.js";
@@ -17,9 +17,9 @@ import TrapCards from "./TrapCards.js";
 
 import { YGoService } from "../../services/ygopro_axios.js";
 
-export default function BudgetBanlistForbidden() {
-  const startprice = 10;
-  const endprice = 99999.99;
+export default function BudgetBanlistLimited() {
+  const startprice = 5;
+  const endprice = 9.99;
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -55,18 +55,6 @@ export default function BudgetBanlistForbidden() {
     return formatter.format(minPrice);
   }
 
-  // function forbiddenCards(card) {
-  //   let { banlist_info } = card;
-
-  //   if (banlist_info === undefined) {
-  //     return;
-  //   }
-
-  //   return Object.values(banlist_info)
-  //     .filter((set) => set.ban_tcg === "Banned")
-  //     .map((set) => set.ban_tcg);
-  // }
-
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -77,10 +65,10 @@ export default function BudgetBanlistForbidden() {
     <>
       <Card>
         <Card.Body>
-          <h2>Forbidden: Cards {formatter.format(startprice)} and above</h2>
+          <h2>Limited: Cards {formatter.format(startprice)} and above</h2>
           <div className="user-container">
             <Table bordered>
-              <BudgetBanlistLable />
+              <PauperBanlistLable />
               <tbody>
                 {data
                   ? data
@@ -94,23 +82,13 @@ export default function BudgetBanlistForbidden() {
                         <NormalMonsters
                           type={card.type}
                           name={card.name}
-                          href={
-                            "https://db.ygoprodeck.com/card/?search=" +
-                            card.name
-                              .replace(",", "%2C")
-                              .replace("#", "%23")
-                              .replace("?", "%3F")
-                              .replace(":", "%3A")
-                              .replace("@", "%40")
-                          }
-                          status="Forbidden"
+                          status="Limited"
                           min_price={minPrice(card)}
                         />
                       ))
                   : null}
                 {data
                   ? data
-                      // .filter((card) => forbiddenCards(card) === "Banned")
                       .filter(
                         (card) =>
                           card.type === "Effect Monster" &&
@@ -121,16 +99,7 @@ export default function BudgetBanlistForbidden() {
                         <EffectMonsters
                           type={card.type}
                           name={card.name}
-                          href={
-                            "https://db.ygoprodeck.com/card/?search=" +
-                            card.name
-                              .replace(",", "%2C")
-                              .replace("#", "%23")
-                              .replace("?", "%3F")
-                              .replace(":", "%3A")
-                              .replace("@", "%40")
-                          }
-                          status="Forbidden"
+                          status="Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -147,16 +116,7 @@ export default function BudgetBanlistForbidden() {
                         <FusionMonsters
                           type={card.type}
                           name={card.name}
-                          href={
-                            "https://db.ygoprodeck.com/card/?search=" +
-                            card.name
-                              .replace(",", "%2C")
-                              .replace("#", "%23")
-                              .replace("?", "%3F")
-                              .replace(":", "%3A")
-                              .replace("@", "%40")
-                          }
-                          status="Forbidden"
+                          status="Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -173,16 +133,7 @@ export default function BudgetBanlistForbidden() {
                         <LinkMonsters
                           type={card.type}
                           name={card.name}
-                          href={
-                            "https://db.ygoprodeck.com/card/?search=" +
-                            card.name
-                              .replace(",", "%2C")
-                              .replace("#", "%23")
-                              .replace("?", "%3F")
-                              .replace(":", "%3A")
-                              .replace("@", "%40")
-                          }
-                          status="Forbidden"
+                          status="Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -199,16 +150,7 @@ export default function BudgetBanlistForbidden() {
                         <SynchroMonsters
                           type={card.type}
                           name={card.name}
-                          href={
-                            "https://db.ygoprodeck.com/card/?search=" +
-                            card.name
-                              .replace(",", "%2C")
-                              .replace("#", "%23")
-                              .replace("?", "%3F")
-                              .replace(":", "%3A")
-                              .replace("@", "%40")
-                          }
-                          status="Forbidden"
+                          status="Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -225,16 +167,7 @@ export default function BudgetBanlistForbidden() {
                         <XYZMonsters
                           type={card.type}
                           name={card.name}
-                          href={
-                            "https://db.ygoprodeck.com/card/?search=" +
-                            card.name
-                              .replace(",", "%2C")
-                              .replace("#", "%23")
-                              .replace("?", "%3F")
-                              .replace(":", "%3A")
-                              .replace("@", "%40")
-                          }
-                          status="Forbidden"
+                          status="Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -251,16 +184,7 @@ export default function BudgetBanlistForbidden() {
                         <SpellCards
                           type={card.type}
                           name={card.name}
-                          href={
-                            "https://db.ygoprodeck.com/card/?search=" +
-                            card.name
-                              .replace(",", "%2C")
-                              .replace("#", "%23")
-                              .replace("?", "%3F")
-                              .replace(":", "%3A")
-                              .replace("@", "%40")
-                          }
-                          status="Forbidden"
+                          status="Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -277,16 +201,7 @@ export default function BudgetBanlistForbidden() {
                         <TrapCards
                           type={card.type}
                           name={card.name}
-                          href={
-                            "https://db.ygoprodeck.com/card/?search=" +
-                            card.name
-                              .replace(",", "%2C")
-                              .replace("#", "%23")
-                              .replace("?", "%3F")
-                              .replace(":", "%3A")
-                              .replace("@", "%40")
-                          }
-                          status="Forbidden"
+                          status="Limited"
                           min_price={minPrice(card)}
                         />
                       ))

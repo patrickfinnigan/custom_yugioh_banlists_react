@@ -5,7 +5,9 @@ import Col from "react-bootstrap/Col";
 
 //Local Imports
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
-import PauperBanlist from "../components/PauperBanlist/PauperBanlist.js";
+import PauperBanlistForbidden from "../components/PauperBanlist/PauperBanlistForbidden.js";
+import PauperBanlistLimited from "../components/PauperBanlist/PauperBanlistLimited.js";
+import PauperBanlistSemiLimited from "../components/PauperBanlist/PauperBanlistSemiLimited.js";
 // import "./PauperBanlistView.scss";
 
 export default function PauperBanlistView() {
@@ -17,7 +19,11 @@ export default function PauperBanlistView() {
       <Container>
         <Row>
           <Col>
-            <PauperBanlist />
+            <PauperBanlistForbidden />
+            <br />
+            <PauperBanlistLimited />
+            <br />
+            <PauperBanlistSemiLimited />
           </Col>
         </Row>
       </Container>

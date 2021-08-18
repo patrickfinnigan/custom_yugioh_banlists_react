@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import BudgetBanlistLable from "./BudgetBanlistLable.js";
+import PauperBanlistLable from "./PauperBanlistLable.js";
 import NormalMonsters from "./NormalMonsters.js";
 import EffectMonsters from "./EffectMonsters.js";
 import FusionMonsters from "./FusionMonsters.js";
@@ -17,7 +17,7 @@ import TrapCards from "./TrapCards.js";
 
 import { YGoService } from "../../services/ygopro_axios.js";
 
-export default function BudgetBanlistForbidden() {
+export default function PauperBanlistForbidden() {
   const startprice = 10;
   const endprice = 99999.99;
   const [data, setData] = useState([]);
@@ -77,10 +77,10 @@ export default function BudgetBanlistForbidden() {
     <>
       <Card>
         <Card.Body>
-          <h2>Forbidden: Cards {formatter.format(startprice)} and above</h2>
+          <h2>src\components\TestComponents\PauperBanlistForbidden.js</h2>
           <div className="user-container">
             <Table bordered>
-              <BudgetBanlistLable />
+              <PauperBanlistLable />
               <tbody>
                 {data
                   ? data

@@ -3,7 +3,7 @@ export default function TrapCards({
   name,
   href,
   status,
-  min_price, 
+  min_price,
   max_price,
 }) {
   return (

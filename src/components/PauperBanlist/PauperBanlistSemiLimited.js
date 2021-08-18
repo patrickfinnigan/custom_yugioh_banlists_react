@@ -5,21 +5,21 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import BudgetBanlistLable from "../BudgetBanlist/BudgetBanlistLable.js";
-import NormalMonsters from "../BudgetBanlist/NormalMonsters.js";
-import EffectMonsters from "../BudgetBanlist/EffectMonsters.js";
-import FusionMonsters from "../BudgetBanlist/FusionMonsters.js";
-import LinkMonsters from "../BudgetBanlist/LinkMonsters.js";
-import SpellCards from "../BudgetBanlist/SpellCards.js";
-import SynchroMonsters from "../BudgetBanlist/SynchroMonsters.js";
-import XYZMonsters from "../BudgetBanlist/XYZMonsters.js";
-import TrapCards from "../BudgetBanlist/TrapCards.js";
+import PauperBanlistLable from "./PauperBanlistLable.js";
+import NormalMonsters from "./NormalMonsters.js";
+import EffectMonsters from "./EffectMonsters.js";
+import FusionMonsters from "./FusionMonsters.js";
+import LinkMonsters from "./LinkMonsters.js";
+import SynchroMonsters from "./SynchroMonsters.js";
+import XYZMonsters from "./XYZMonsters.js";
+import SpellCards from "./SpellCards.js";
+import TrapCards from "./TrapCards.js";
 
 import { YGoService } from "../../services/ygopro_axios.js";
 
-export default function ForbiddenTestPage() {
-  const startprice = 5.01;
-  const endprice = 99999.99;
+export default function BudgetBanlistSemiLimited() {
+  const startprice = 1.5;
+  const endprice = 4.99;
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -55,18 +55,6 @@ export default function ForbiddenTestPage() {
     return formatter.format(minPrice);
   }
 
-  // function forbiddenCards(card) {
-  //   let { banlist_info } = card;
-
-  //   if (banlist_info === undefined) {
-  //     return;
-  //   }
-
-  //   return Object.values(banlist_info)
-  //     .filter((set) => set.ban_tcg === "Banned")
-  //     .map((set) => set.ban_tcg);
-  // }
-
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -77,10 +65,10 @@ export default function ForbiddenTestPage() {
     <>
       <Card>
         <Card.Body>
-          <h2>Forbidden: Cards {formatter.format(startprice)} and above</h2>
+          <h2>Semi-Limited: Cards {formatter.format(startprice)} and above</h2>
           <div className="user-container">
             <Table bordered>
-              <BudgetBanlistLable />
+              <PauperBanlistLable />
               <tbody>
                 {data
                   ? data
@@ -94,14 +82,13 @@ export default function ForbiddenTestPage() {
                         <NormalMonsters
                           type={card.type}
                           name={card.name}
-                          status="Forbidden"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
                   : null}
                 {data
                   ? data
-                      // .filter((card) => forbiddenCards(card) === "Banned")
                       .filter(
                         (card) =>
                           card.type === "Effect Monster" &&
@@ -112,7 +99,7 @@ export default function ForbiddenTestPage() {
                         <EffectMonsters
                           type={card.type}
                           name={card.name}
-                          status="Forbidden"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -129,7 +116,7 @@ export default function ForbiddenTestPage() {
                         <FusionMonsters
                           type={card.type}
                           name={card.name}
-                          status="Forbidden"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -146,7 +133,7 @@ export default function ForbiddenTestPage() {
                         <LinkMonsters
                           type={card.type}
                           name={card.name}
-                          status="Forbidden"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -163,7 +150,7 @@ export default function ForbiddenTestPage() {
                         <SynchroMonsters
                           type={card.type}
                           name={card.name}
-                          status="Forbidden"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -180,7 +167,7 @@ export default function ForbiddenTestPage() {
                         <XYZMonsters
                           type={card.type}
                           name={card.name}
-                          status="Forbidden"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -197,7 +184,7 @@ export default function ForbiddenTestPage() {
                         <SpellCards
                           type={card.type}
                           name={card.name}
-                          status="Forbidden"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -214,7 +201,7 @@ export default function ForbiddenTestPage() {
                         <TrapCards
                           type={card.type}
                           name={card.name}
-                          status="Forbidden"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))

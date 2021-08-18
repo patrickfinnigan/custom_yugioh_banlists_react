@@ -82,6 +82,15 @@ export default function BudgetBanlistSemiLimited() {
                         <NormalMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
@@ -99,6 +108,15 @@ export default function BudgetBanlistSemiLimited() {
                         <EffectMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
@@ -116,6 +134,15 @@ export default function BudgetBanlistSemiLimited() {
                         <FusionMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
@@ -133,6 +160,15 @@ export default function BudgetBanlistSemiLimited() {
                         <LinkMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
@@ -150,6 +186,15 @@ export default function BudgetBanlistSemiLimited() {
                         <SynchroMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
@@ -167,6 +212,15 @@ export default function BudgetBanlistSemiLimited() {
                         <XYZMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
@@ -184,6 +238,15 @@ export default function BudgetBanlistSemiLimited() {
                         <SpellCards
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
@@ -201,6 +264,15 @@ export default function BudgetBanlistSemiLimited() {
                         <TrapCards
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Semi-Limited"
                           min_price={minPrice(card)}
                         />

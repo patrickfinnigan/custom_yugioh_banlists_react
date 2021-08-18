@@ -1,13 +1,13 @@
-export default function TrapCards({
+export default function FusionMonsters({
   type,
   name,
   href,
   status,
-  min_price, 
+  min_price,
   max_price,
 }) {
   return (
-    <tr className={["trap_card"]}>
+    <tr className={["fusion_monster"]}>
       <th className={["normal-weight-text"]}>{type}</th>
       <th className={["normal-weight-text"]}>
         <a href={href} target="_blank" rel="noreferrer">

@@ -1,4 +1,4 @@
-export default function TrapCards({
+export default function EffectMonsters({
   type,
   name,
   href,
@@ -7,8 +7,8 @@ export default function TrapCards({
   max_price,
 }) {
   return (
-    <tr className={["trap_card"]}>
-      <th className={["normal-weight-text"]}>{type}</th>
+    <tr className={["effect_monster"]}>
+<th className={["normal-weight-text"]}>{type}</th>
       <th className={["normal-weight-text"]}>
         <a href={href} target="_blank" rel="noreferrer">
           {name}

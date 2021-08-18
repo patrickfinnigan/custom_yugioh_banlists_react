@@ -5,12 +5,11 @@ import Col from "react-bootstrap/Col";
 
 //Local Imports
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
-import ForbiddenTestPage from "../components/TestComponents/ForbiddenTestPage.js";
-
-import LimitedTestPage from "../components/TestComponents/LimitedTestPage.js";
+import PauperBanlistForbidden from "../components/TestComponents/PauperBanlistForbidden.js";
+import PauperBanlistLimited from "../components/TestComponents/PauperBanlistLimited.js";
+import PauperBanlistSemiLimited from "../components/TestComponents/PauperBanlistSemiLimited.js";
 
 export default function TestView() {
-
   return (
     <div>
       <header>
@@ -19,9 +18,11 @@ export default function TestView() {
       <Container>
         <Row>
           <Col>
-          <ForbiddenTestPage />
-          <br />
-          <LimitedTestPage />
+            <PauperBanlistForbidden />
+            <br />
+            <PauperBanlistLimited />
+            <br />
+            <PauperBanlistSemiLimited />
           </Col>
         </Row>
       </Container>

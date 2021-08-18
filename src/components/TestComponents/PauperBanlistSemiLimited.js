@@ -5,21 +5,21 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import BudgetBanlistLable from "../BudgetBanlist/BudgetBanlistLable.js";
-import NormalMonsters from "../BudgetBanlist/NormalMonsters.js";
-import EffectMonsters from "../BudgetBanlist/EffectMonsters.js";
-import FusionMonsters from "../BudgetBanlist/FusionMonsters.js";
-import LinkMonsters from "../BudgetBanlist/LinkMonsters.js";
-import SpellCards from "../BudgetBanlist/SpellCards.js";
-import SynchroMonsters from "../BudgetBanlist/SynchroMonsters.js";
-import XYZMonsters from "../BudgetBanlist/XYZMonsters.js";
-import TrapCards from "../BudgetBanlist/TrapCards.js";
+import PauperBanlistLable from "./PauperBanlistLable.js";
+import NormalMonsters from "./NormalMonsters.js";
+import EffectMonsters from "./EffectMonsters.js";
+import FusionMonsters from "./FusionMonsters.js";
+import LinkMonsters from "./LinkMonsters.js";
+import SynchroMonsters from "./SynchroMonsters.js";
+import XYZMonsters from "./XYZMonsters.js";
+import SpellCards from "./SpellCards.js";
+import TrapCards from "./TrapCards.js";
 
 import { YGoService } from "../../services/ygopro_axios.js";
 
-export default function LimitedTestPage() {
+export default function BudgetBanlistSemiLimited() {
   const startprice = 1.5;
-  const endprice = 5;
+  const endprice = 4.99;
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -65,10 +65,10 @@ export default function LimitedTestPage() {
     <>
       <Card>
         <Card.Body>
-          <h2>Limited: Cards {formatter.format(startprice)} and above</h2>
+          <h2>Semi-Limited: Cards {formatter.format(startprice)} and above</h2>
           <div className="user-container">
             <Table bordered>
-              <BudgetBanlistLable />
+              <PauperBanlistLable />
               <tbody>
                 {data
                   ? data
@@ -82,7 +82,7 @@ export default function LimitedTestPage() {
                         <NormalMonsters
                           type={card.type}
                           name={card.name}
-                          status="Limited"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -99,7 +99,7 @@ export default function LimitedTestPage() {
                         <EffectMonsters
                           type={card.type}
                           name={card.name}
-                          status="Limited"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -116,7 +116,7 @@ export default function LimitedTestPage() {
                         <FusionMonsters
                           type={card.type}
                           name={card.name}
-                          status="Limited"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -133,7 +133,7 @@ export default function LimitedTestPage() {
                         <LinkMonsters
                           type={card.type}
                           name={card.name}
-                          status="Limited"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -150,7 +150,7 @@ export default function LimitedTestPage() {
                         <SynchroMonsters
                           type={card.type}
                           name={card.name}
-                          status="Limited"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -167,7 +167,7 @@ export default function LimitedTestPage() {
                         <XYZMonsters
                           type={card.type}
                           name={card.name}
-                          status="Limited"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -184,7 +184,7 @@ export default function LimitedTestPage() {
                         <SpellCards
                           type={card.type}
                           name={card.name}
-                          status="Limited"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
@@ -201,7 +201,7 @@ export default function LimitedTestPage() {
                         <TrapCards
                           type={card.type}
                           name={card.name}
-                          status="Limited"
+                          status="Semi-Limited"
                           min_price={minPrice(card)}
                         />
                       ))
