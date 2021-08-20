@@ -18,8 +18,6 @@ import TrapCards from "./TrapCards.js";
 import { YGoService } from "../../services/ygopro_axios.js";
 
 export default function PauperBanlistForbidden() {
-  const startprice = 10;
-  const endprice = 99999.99;
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -30,54 +28,49 @@ export default function PauperBanlistForbidden() {
       .catch((error) => console.error(`Error: ${error}`));
   }, []);
 
-  // most of the code used to convert money values of each api entry
-
-  function minPrice(card) {
+  function cardRarity(card) {
     let { card_sets } = card;
-    let { card_prices } = card;
 
     if (card_sets === undefined) {
       return;
     }
 
-    let minPrice = Math.min(
-      ...card_prices
-        .filter((set) => set.tcgplayer_price !== "0.00")
-        .map((set) => parseFloat(set.tcgplayer_price))
-    );
+    let raritySearch = {
+      ...card_sets
+        .filter((set) => set.set_rarity_code !== undefined)
+        .map((set) => set.set_rarity_code),
+    };
 
-    if (minPrice <= startprice) {
+    if (Object.values(raritySearch).includes("(C)")) {
       return;
-    } else if (minPrice >= endprice) {
+    } else if (Object.values(raritySearch).includes("(R)")) {
+      return;
+    } else if (Object.values(raritySearch).includes("(SP)")) {
       return;
     }
 
-    return formatter.format(minPrice);
+    let currentCardRarities = [];
+
+    for (const [key, value] of Object.entries(raritySearch)) {
+      if (
+        currentCardRarities.indexOf(
+          value.replace("(", "").replace(")", ", ")
+        ) !== -1
+      ) {
+        return;
+      } else {
+        currentCardRarities += value.replace("(", "").replace(")", ", ");
+      }
+    }
+
+    return currentCardRarities.slice(0, -2);
   }
-
-  // function forbiddenCards(card) {
-  //   let { banlist_info } = card;
-
-  //   if (banlist_info === undefined) {
-  //     return;
-  //   }
-
-  //   return Object.values(banlist_info)
-  //     .filter((set) => set.ban_tcg === "Banned")
-  //     .map((set) => set.ban_tcg);
-  // }
-
-  const formatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-  });
 
   return (
     <>
       <Card>
         <Card.Body>
-          <h2>Forbidden: Cards {formatter.format(startprice)} and above</h2>
+          <h2>Forbidden: No avalible Common or Rare printings</h2>
           <div className="user-container">
             <Table bordered>
               <PauperBanlistLable />
@@ -88,32 +81,49 @@ export default function PauperBanlistForbidden() {
                         (card) =>
                           card.type === "Normal Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <NormalMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Forbidden"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
                 {data
                   ? data
-                      // .filter((card) => forbiddenCards(card) === "Banned")
                       .filter(
                         (card) =>
                           card.type === "Effect Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <EffectMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Forbidden"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -123,14 +133,23 @@ export default function PauperBanlistForbidden() {
                         (card) =>
                           card.type === "Fusion Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <FusionMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Forbidden"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -140,14 +159,23 @@ export default function PauperBanlistForbidden() {
                         (card) =>
                           card.type === "Link Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <LinkMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Forbidden"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -157,14 +185,23 @@ export default function PauperBanlistForbidden() {
                         (card) =>
                           card.type === "Synchro Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <SynchroMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Forbidden"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -174,14 +211,23 @@ export default function PauperBanlistForbidden() {
                         (card) =>
                           card.type === "XYZ Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <XYZMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Forbidden"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -191,14 +237,23 @@ export default function PauperBanlistForbidden() {
                         (card) =>
                           card.type === "Spell Card" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <SpellCards
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Forbidden"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -208,14 +263,23 @@ export default function PauperBanlistForbidden() {
                         (card) =>
                           card.type === "Trap Card" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <TrapCards
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Forbidden"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}

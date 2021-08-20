@@ -5,7 +5,7 @@ export default function PauperBanlistLable() {
         <th>Card Type</th>
         <th>Card Name</th>
         <th>Pauper Format</th>
-        <th>Lowest Print</th>
+        <th>Current Prints</th>
       </tr>
     </thead>
   );

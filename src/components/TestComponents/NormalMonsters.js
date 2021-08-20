@@ -3,7 +3,7 @@ export default function NormalMonsters({
   name,
   href,
   status,
-  min_price,
+  rarity,
 }) {
   return (
     <tr className={["normal_monster"]}>
@@ -14,8 +14,7 @@ export default function NormalMonsters({
         </a>
       </th>
       <th className={["normal-weight-text"]}>{status}</th>
-      {/* <th className={["normal-weight-text"]}>{href}</th> */}
-      <th className={["normal-weight-text"]}>{min_price}</th>
+      <th className={["normal-weight-text"]}>{rarity}</th>
     </tr>
   );
 }

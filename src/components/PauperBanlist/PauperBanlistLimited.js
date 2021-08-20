@@ -17,9 +17,7 @@ import TrapCards from "./TrapCards.js";
 
 import { YGoService } from "../../services/ygopro_axios.js";
 
-export default function BudgetBanlistLimited() {
-  const startprice = 5;
-  const endprice = 9.99;
+export default function PauperBanlistLimited() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -30,42 +28,49 @@ export default function BudgetBanlistLimited() {
       .catch((error) => console.error(`Error: ${error}`));
   }, []);
 
-  // most of the code used to convert money values of each api entry
-
-  function minPrice(card) {
+  function cardRarity(card) {
     let { card_sets } = card;
-    let { card_prices } = card;
 
     if (card_sets === undefined) {
       return;
     }
 
-    let minPrice = Math.min(
-      ...card_prices
-        .filter((set) => set.tcgplayer_price !== "0.00")
-        .map((set) => parseFloat(set.tcgplayer_price))
-    );
+    let raritySearch = {
+      ...card_sets
+        .filter((set) => set.set_rarity_code !== undefined)
+        .map((set) => set.set_rarity_code),
+    };
 
-    if (minPrice <= startprice) {
+    if (Object.values(raritySearch).includes("(C)")) {
       return;
-    } else if (minPrice >= endprice) {
+    } else if (Object.values(raritySearch).includes("(R)") === false) {
+      return;
+    } else if (Object.values(raritySearch).includes("(SP)")) {
       return;
     }
 
-    return formatter.format(minPrice);
-  }
+    let currentCardRarities = [];
 
-  const formatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-  });
+    for (const [key, value] of Object.entries(raritySearch)) {
+      if (
+        currentCardRarities.indexOf(
+          value.replace("(", "").replace(")", ", ")
+        ) !== -1
+      ) {
+        return;
+      } else {
+        currentCardRarities += value.replace("(", "").replace(")", ", ");
+      }
+    }
+
+    return currentCardRarities.slice(0, -2);
+  }
 
   return (
     <>
       <Card>
         <Card.Body>
-          <h2>Limited: Cards {formatter.format(startprice)} and above</h2>
+          <h2>Limited: Rare avalible as card's lowest rarity</h2>
           <div className="user-container">
             <Table bordered>
               <PauperBanlistLable />
@@ -76,14 +81,23 @@ export default function BudgetBanlistLimited() {
                         (card) =>
                           card.type === "Normal Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <NormalMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Limited"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -93,14 +107,23 @@ export default function BudgetBanlistLimited() {
                         (card) =>
                           card.type === "Effect Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <EffectMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Limited"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -110,14 +133,23 @@ export default function BudgetBanlistLimited() {
                         (card) =>
                           card.type === "Fusion Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <FusionMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Limited"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -127,14 +159,23 @@ export default function BudgetBanlistLimited() {
                         (card) =>
                           card.type === "Link Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <LinkMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Limited"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -144,14 +185,23 @@ export default function BudgetBanlistLimited() {
                         (card) =>
                           card.type === "Synchro Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <SynchroMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Limited"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -161,14 +211,23 @@ export default function BudgetBanlistLimited() {
                         (card) =>
                           card.type === "XYZ Monster" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <XYZMonsters
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Limited"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -178,14 +237,23 @@ export default function BudgetBanlistLimited() {
                         (card) =>
                           card.type === "Spell Card" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <SpellCards
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Limited"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}
@@ -195,14 +263,23 @@ export default function BudgetBanlistLimited() {
                         (card) =>
                           card.type === "Trap Card" &&
                           card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          cardRarity(card) !== undefined
                       )
                       .map((card) => (
                         <TrapCards
                           type={card.type}
                           name={card.name}
+                          href={
+                            "https://db.ygoprodeck.com/card/?search=" +
+                            card.name
+                              .replace(",", "%2C")
+                              .replace("#", "%23")
+                              .replace("?", "%3F")
+                              .replace(":", "%3A")
+                              .replace("@", "%40")
+                          }
                           status="Limited"
-                          min_price={minPrice(card)}
+                          rarity={cardRarity(card)}
                         />
                       ))
                   : null}

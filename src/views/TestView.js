@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
 import PauperBanlistForbidden from "../components/TestComponents/PauperBanlistForbidden.js";
 import PauperBanlistLimited from "../components/TestComponents/PauperBanlistLimited.js";
-import PauperBanlistSemiLimited from "../components/TestComponents/PauperBanlistSemiLimited.js";
+// import PauperBanlistSemiLimited from "../components/TestComponents/PauperBanlistSemiLimited.js";
 
 export default function TestView() {
   return (
@@ -22,7 +22,7 @@ export default function TestView() {
             <br />
             <PauperBanlistLimited />
             <br />
-            <PauperBanlistSemiLimited />
+            {/* <PauperBanlistSemiLimited /> */}
           </Col>
         </Row>
       </Container>

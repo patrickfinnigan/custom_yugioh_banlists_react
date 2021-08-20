@@ -4,8 +4,8 @@ export default function PauperBanlistLable() {
       <tr className={["banlist_label"]}>
         <th>Card Type</th>
         <th>Card Name</th>
-        <th>Budget Format</th>
-        <th>Min Price</th>
+        <th>Pauper Format</th>
+        <th>Current Prints</th>
       </tr>
     </thead>
   );

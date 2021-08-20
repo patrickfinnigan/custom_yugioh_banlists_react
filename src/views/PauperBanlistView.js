@@ -7,7 +7,8 @@ import Col from "react-bootstrap/Col";
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
 import PauperBanlistForbidden from "../components/PauperBanlist/PauperBanlistForbidden.js";
 import PauperBanlistLimited from "../components/PauperBanlist/PauperBanlistLimited.js";
-import PauperBanlistSemiLimited from "../components/PauperBanlist/PauperBanlistSemiLimited.js";
+import PauperBanlistRarityKey from "../components/PauperBanlist/PauperBanlistRarityKey.js";
+// import PauperBanlistSemiLimited from "../components/PauperBanlist/PauperBanlistSemiLimited.js";
 // import "./PauperBanlistView.scss";
 
 export default function PauperBanlistView() {
@@ -22,8 +23,11 @@ export default function PauperBanlistView() {
             <PauperBanlistForbidden />
             <br />
             <PauperBanlistLimited />
+            {/* <br />
+            <PauperBanlistSemiLimited /> */}
             <br />
-            <PauperBanlistSemiLimited />
+            <PauperBanlistRarityKey />
+            <br />
           </Col>
         </Row>
       </Container>

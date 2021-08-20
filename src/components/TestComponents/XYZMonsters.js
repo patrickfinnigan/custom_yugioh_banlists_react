@@ -3,8 +3,7 @@ export default function XYZMonsters({
   name,
   href,
   status,
-  min_price, 
-  max_price,
+  rarity
 }) {
   return (
     <tr className={["xyz_monster"]}>
@@ -15,8 +14,7 @@ export default function XYZMonsters({
         </a>
       </th>
       <th className={["normal-weight-text"]}>{status}</th>
-      {/* <th className={["normal-weight-text"]}>{href}</th> */}
-      <th className={["normal-weight-text"]}>{min_price}</th>
+      <th className={["normal-weight-text"]}>{rarity}</th>
     </tr>
   );
 }

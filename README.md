@@ -4,4 +4,6 @@ pretty much this is a personal project to generate yugioh budget and pauper form
 
 ## to-dos
 
-implement the pauper formatting method into the pauper list, by grabbing card rarity data and filtering out anything that is common (all unlimited) or rare (all limited to 1)
+- Add loading spinner
+- Add ARIA Accessibility features
+- Add Reader mode 
