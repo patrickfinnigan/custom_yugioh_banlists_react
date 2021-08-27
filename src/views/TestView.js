@@ -8,6 +8,7 @@ import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
 import PauperBanlistForbidden from "../components/TestComponents/PauperBanlistForbidden.js";
 import PauperBanlistLimited from "../components/TestComponents/PauperBanlistLimited.js";
 // import PauperBanlistSemiLimited from "../components/TestComponents/PauperBanlistSemiLimited.js";
+import SearchBox from "../components/GeneralComponents/SearchBox.js";
 
 export default function TestView() {
   return (
@@ -15,9 +16,12 @@ export default function TestView() {
       <header>
         <MainNavBar />
       </header>
+      <br />
       <Container>
         <Row>
           <Col>
+            <SearchBox />
+            <br />
             <PauperBanlistForbidden />
             <br />
             <PauperBanlistLimited />
@@ -29,4 +33,3 @@ export default function TestView() {
     </div>
   );
 }
-

@@ -28,6 +28,12 @@ export default function PauperBanlistForbidden() {
       .catch((error) => console.error(`Error: ${error}`));
   }, []);
 
+  function cardId(card) {
+    // this is where i will convert a card's name into a string with no spaces or capitalization and use that as a card's search id
+    // that way i can just convert whatever search term a user may enter into a no space, no cap string and just match the ids
+    // and smooth scroll the view to the entry and give the entry a highlight
+  }
+
   function cardRarity(card) {
     let { card_sets } = card;
 

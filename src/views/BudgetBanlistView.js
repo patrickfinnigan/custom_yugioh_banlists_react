@@ -16,6 +16,7 @@ export default function BudgetBanlistView() {
       <header>
         <MainNavBar />
       </header>
+      <br />
       <Container>
         <Row>
           <Col>

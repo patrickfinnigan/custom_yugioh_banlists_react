@@ -17,6 +17,7 @@ export default function PauperBanlistView() {
       <header>
         <MainNavBar />
       </header>
+      <br />
       <Container>
         <Row>
           <Col>
