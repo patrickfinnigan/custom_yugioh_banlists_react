@@ -1,0 +1,61 @@
+{
+  "data": [{
+      "id": 72053645,
+      "name": "Weather Report",
+      "type": "Effect Monster",
+      "desc": "FLIP: Destroys all of your opponent's face-up \"Swords of Revealing Light\" on the field. If \"Swords of Revealing Light\" is destroyed, you can perform your Battle Phase twice this turn (or your next turn, if activated during your opponent's turn).",
+      "atk": 950,
+      "def": 1500,
+      "level": 4,
+      "race": "Aqua",
+      "attribute": "WATER",
+      "banlist_info": {
+        "ban_tcg": "Banned",
+        "ban_ocg": "Limited"
+      },
+      "card_images": [{
+        "id": 72053645,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/72053645.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/72053645.jpg"
+      }]
+    },
+    {
+      "id": 81122844,
+      "name": "Wind-Up Carrier Zenmaity",
+      "type": "XYZ Monster",
+      "desc": "2 Level 3 monsters\nOnce per turn: You can detach 1 Xyz Material from this card; Special Summon 1 \"Wind-Up\" monster from your hand or Deck. When a face-up \"Wind-Up\" monster on the field is destroyed and sent to your Graveyard (except during the Damage Step): You can detach 1 Xyz Material from this card to target that monster; return that target to the hand.",
+      "atk": 1500,
+      "def": 1500,
+      "level": 3,
+      "race": "Machine",
+      "attribute": "WATER",
+      "archetype": "Wind-Up",
+      "banlist_info": {
+        "ban_tcg": "Banned",
+        "ban_ocg": "Limited"
+      },
+      "card_images": [{
+        "id": 81122844,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/81122844.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/81122844.jpg"
+      }]
+    },
+    {
+      "id": 84211599,
+      "name": "Pot of Prosperity",
+      "type": "Spell Card",
+      "desc": "Banish 3 or 6 cards of your choice from your Extra Deck, face-down; for the rest of this turn after this card resolves, any damage your opponent takes is halved, also excavate cards from the top of your Deck equal to the number of cards banished, add 1 excavated card to your hand, place the rest on the bottom of your Deck in any order. You can only activate 1 \"Pot of Prosperity\" per turn. You cannot draw cards by card effects the turn you activate this card.",
+      "race": "Normal",
+      "archetype": "Greed",
+      "banlist_info": {
+        "ban_tcg": "Banned",
+        "ban_ocg": "Limited"
+      },
+      "card_images": [{
+        "id": 84211599,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/84211599.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/84211599.jpg"
+      }]
+    }
+  ]
+}

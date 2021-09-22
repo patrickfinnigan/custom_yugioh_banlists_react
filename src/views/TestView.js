@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 //Local Imports
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
-import PauperBanlistForbidden from "../components/TestComponents/PauperBanlistForbidden.js";
+import CustomBanlistForbidden from "../components/TestComponents/CustomBanlistForbidden.js";
 import PauperBanlistLimited from "../components/TestComponents/PauperBanlistLimited.js";
 // import PauperBanlistSemiLimited from "../components/TestComponents/PauperBanlistSemiLimited.js";
 import SearchBox from "../components/GeneralComponents/SearchBox.js";
@@ -22,7 +22,7 @@ export default function TestView() {
           <Col>
             <SearchBox />
             <br />
-            <PauperBanlistForbidden />
+            <CustomBanlistForbidden />
             <br />
             <PauperBanlistLimited />
             <br />
