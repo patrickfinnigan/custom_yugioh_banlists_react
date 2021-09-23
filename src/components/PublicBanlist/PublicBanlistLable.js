@@ -4,7 +4,7 @@ export default function PublicBanlistLable() {
       <tr className={["banlist_label"]}>
         <th>Card Type</th>
         <th>Card Name</th>
-        <th>Pauper Format</th>
+        <th>Standing</th>
         <th>Reason</th>
       </tr>
     </thead>
