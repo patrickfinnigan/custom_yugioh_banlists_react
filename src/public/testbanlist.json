@@ -583,6 +583,43 @@
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/76375976.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/76375976.jpg"
       }]
+    },
+    {
+      "id": 32807846,
+      "name": "Reinforcement of the Army",
+      "type": "Spell Card",
+      "desc": "Add 1 Level 4 or lower Warrior monster from your Deck to your hand.",
+      "race": "Normal",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "Experimentation",
+        "ban_ocg_reason": "Experimentation"
+      },
+      "card_images": [{
+        "id": 32807846,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/32807846.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/32807846.jpg"
+      }]
+    },
+    {
+      "id": 55144522,
+      "name": "Pot of Greed",
+      "type": "Spell Card",
+      "desc": "Draw 2 cards.",
+      "race": "Normal",
+      "archetype": "Greed",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Experimentation",
+        "ban_ocg_reason": "Experimentation"
+      },
+      "card_images": [{
+        "id": 55144522,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/55144522.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/55144522.jpg"
+      }]
     }
   ]
 }
