@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 //Local Imports
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
 import CustomBanlistForbidden from "../components/TestComponents/CustomBanlistForbidden.js";
-import PauperBanlistLimited from "../components/TestComponents/PauperBanlistLimited.js";
+import CustomBanlistLimited from "../components/TestComponents/CustomBanlistLimited.js";
 // import PauperBanlistSemiLimited from "../components/TestComponents/PauperBanlistSemiLimited.js";
 import SearchBox from "../components/GeneralComponents/SearchBox.js";
 
@@ -24,7 +24,7 @@ export default function TestView() {
             <br />
             <CustomBanlistForbidden />
             <br />
-            <PauperBanlistLimited />
+            <CustomBanlistLimited />
             <br />
             {/* <PauperBanlistSemiLimited /> */}
           </Col>

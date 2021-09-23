@@ -10,8 +10,10 @@
       "race": "Aqua",
       "attribute": "WATER",
       "banlist_info": {
-        "ban_tcg": "Banned",
-        "ban_ocg": "Limited"
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "NOP, NO DOUBLE",
+        "ban_ocg_reason": "NOP, NO DOUBLE"
       },
       "card_images": [{
         "id": 72053645,
@@ -31,8 +33,10 @@
       "attribute": "WATER",
       "archetype": "Wind-Up",
       "banlist_info": {
-        "ban_tcg": "Banned",
-        "ban_ocg": "Limited"
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Resource Loops",
+        "ban_ocg_reason": "Resource Loops"
       },
       "card_images": [{
         "id": 81122844,
@@ -48,13 +52,536 @@
       "race": "Normal",
       "archetype": "Greed",
       "banlist_info": {
-        "ban_tcg": "Banned",
-        "ban_ocg": "Limited"
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Market Inaccessibility",
+        "ban_ocg_reason": "Market Inaccessibility"
       },
       "card_images": [{
         "id": 84211599,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/84211599.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/84211599.jpg"
+      }]
+    },
+    {
+      "id": 37818794,
+      "name": "Red-Eyes Dark Dragoon",
+      "type": "Fusion Monster",
+      "desc": "\"Dark Magician\" + \"Red-Eyes B. Dragon\" or 1 Dragon Effect Monster\r\nNeither player can target or destroy this card with card effects. During your Main Phase: You can destroy 1 monster your opponent controls, and if you do, inflict damage to your opponent equal to that monster's original ATK. This effect can be used a number of times per turn, up to the number of Normal Monsters used as Fusion Material for this card's Summon. Once per turn, when a card or effect is activated (Quick Effect): You can discard 1 card; negate the activation, and if you do, destroy that card, and if you do that, this card gains 1000 ATK.",
+      "atk": 3000,
+      "def": 2500,
+      "level": 8,
+      "race": "Spellcaster",
+      "attribute": "DARK",
+      "archetype": "Red-Eyes",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Too easy to play compared to power level",
+        "ban_ocg_reason": "Too easy to play compared to power level"
+      },
+      "card_images": [{
+        "id": 37818794,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/37818794.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/37818794.jpg"
+      }]
+    },
+    {
+      "id": 86066372,
+      "name": "Accesscode Talker",
+      "type": "Link Monster",
+      "desc": "2+ Effect Monsters\r\nYour opponent cannot activate cards or effects in response to this card's effect activations. If this card is Link Summoned: You can target 1 Link Monster that was used as material for its Link Summon; this card gains ATK equal to that monster's Link Rating x 1000. You can banish 1 Link Monster from your field or GY; destroy 1 card your opponent controls, also for the rest of this turn, you cannot banish monsters with that same Attribute to activate this effect of \"Accesscode Talker\".",
+      "atk": 2300,
+      "race": "Cyberse",
+      "attribute": "DARK",
+      "archetype": "Code Talker",
+      "linkval": 4,
+      "linkmarkers": [
+        "Top",
+        "Left",
+        "Bottom",
+        "Right"
+      ],
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Market Inaccessibility",
+        "ban_ocg_reason": "Market Inaccessibility"
+      },
+      "card_images": [{
+        "id": 86066372,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/86066372.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/86066372.jpg"
+      }]
+    },
+    {
+      "id": 49202162,
+      "name": "Black Luster Soldier - Soldier of Chaos",
+      "type": "Link Monster",
+      "desc": "3 monsters with different names\r\nIf this card was Link Summoned using a Level 7 or higher monster(s) as material, your opponent cannot target it with card effects, also it cannot be destroyed by your opponent's card effects. When this card destroys an opponent's monster by battle: You can activate 1 of these effects;\r\n● This card gains 1500 ATK.\r\n● This card can make a second attack during the Battle Phase of your next turn.\r\n● Banish 1 card on the field.",
+      "atk": 3000,
+      "race": "Warrior",
+      "attribute": "EARTH",
+      "archetype": "Black Luster Soldier",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Market Inaccessibility",
+        "ban_ocg_reason": "Market Inaccessibility"
+      },
+      "linkval": 3,
+      "linkmarkers": [
+        "Top",
+        "Bottom-Left",
+        "Bottom-Right"
+      ],
+      "card_images": [{
+        "id": 49202162,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/49202162.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/49202162.jpg"
+      }]
+    }, {
+      "id": 62543393,
+      "name": "Lekunga",
+      "type": "Effect Monster",
+      "desc": "You can banish 2 WATER monsters from your Graveyard; Special Summon 1 \"Lekunga Token\" (Plant-Type/WATER/Level 2/ATK 700/DEF 700) in Attack Position.",
+      "atk": 1700,
+      "def": 500,
+      "level": 4,
+      "race": "Plant",
+      "attribute": "WATER",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Link Climb Shenanigans",
+        "ban_ocg_reason": "Link Climb Shenanigans"
+      },
+      "card_images": [{
+        "id": 62543393,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/62543393.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/62543393.jpg"
+      }]
+    },
+    {
+      "id": 65681983,
+      "name": "Crossout Designator",
+      "type": "Spell Card",
+      "desc": "Declare 1 card name; banish 1 card with that name from your Deck, and if you do, until the end of this turn, its effects are negated, as well as the activated effects and effects on the field of cards with the same original name. You can only activate 1 \"Crossout Designator\" per turn.",
+      "race": "Quick-Play",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Market Inaccessibility",
+        "ban_ocg_reason": "Market Inaccessibility"
+      },
+      "card_images": [{
+        "id": 65681983,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/65681983.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/65681983.jpg"
+      }]
+    },
+    {
+      "id": 47679935,
+      "name": "Magical Meltdown",
+      "type": "Spell Card",
+      "desc": "When this card is activated: You can add 1 \"Aleister the Invoker\" from your Deck to your hand. The activation of your cards and effects that include an effect that Fusion Summons a Fusion Monster cannot be negated, also your opponent's cards and effects cannot activate when a monster is Fusion Summoned this way. You can only activate 1 \"Magical Meltdown\" per turn.",
+      "race": "Field",
+      "archetype": "Invoked",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Consistency Reduction",
+        "ban_ocg_reason": "Consistency Reduction"
+      },
+      "card_images": [{
+        "id": 47679935,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/47679935.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/47679935.jpg"
+      }]
+    },
+    {
+      "id": 3580032,
+      "name": "Merlin",
+      "type": "Effect Monster",
+      "desc": "You can only use each effect of \"Merlin\" once per turn.\n● You can Tribute this card; Special Summon 1 \"Noble Knight\" monster from your Deck. You cannot Special Summon monsters the turn you activate this effect, except \"Noble Knight\" monsters.\n● (Quick Effect): You can banish this card from your GY; immediately after this effect resolves, Synchro Summon 1 \"Noble Knight\" Synchro Monster using monsters you control.\n● (Quick Effect): You can banish this card from your GY; immediately after this effect resolves, Xyz Summon 1 \"Noble Knight\" Xyz Monster using monsters you control.",
+      "atk": 1400,
+      "def": 500,
+      "level": 3,
+      "race": "Spellcaster",
+      "attribute": "DARK",
+      "archetype": "Noble Knight",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "You Know Why",
+        "ban_ocg_reason": "You Know Why"
+      },
+      "card_images": [{
+        "id": 3580032,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/3580032.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/3580032.jpg"
+      }]
+    },
+    {
+      "id": 3280747,
+      "name": "Sixth Sense",
+      "type": "Trap Card",
+      "desc": "Declare 2 numbers from 1 to 6, then your opponent rolls a six-sided die, and if the result is one of the numbers you declared, you draw that many cards. Otherwise, send a number of cards from the top of your Deck to the Graveyard equal to the result.",
+      "race": "Normal",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "GOOD LUCK ASSHOLES",
+        "ban_ocg_reason": "GOOD LUCK ASSHOLES"
+      },
+      "card_images": [{
+        "id": 3280747,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/3280747.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/3280747.jpg"
+      }]
+    }, {
+      "id": 40975243,
+      "name": "Tri-Brigade Revolt",
+      "type": "Trap Card",
+      "desc": "Special Summon a number of your Beast, Beast-Warrior, and/or Winged Beast monsters, that are banished and/or in your GY, but negate their effects, then, immediately after this effect resolves, Link Summon 1 \"Tri-Brigade\" Link Monster using only those monsters. You can only activate 1 \"Tri-Brigade Revolt\" per turn.",
+      "race": "Normal",
+      "archetype": "Tri-Brigade",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Consistency Reduction",
+        "ban_ocg_reason": "Consistency Reduction"
+      },
+      "card_images": [{
+        "id": 40975243,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/40975243.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/40975243.jpg"
+      }]
+    },
+    {
+      "id": 49036338,
+      "name": "PSY-Frame Driver",
+      "type": "Normal Monster",
+      "desc": "A Psychic soldier that rides into battle against the Security Forces on currents of lightning, using an autonomic amplifier called \"PSY-Frame\".",
+      "atk": 2500,
+      "def": 0,
+      "level": 6,
+      "race": "Psychic",
+      "attribute": "LIGHT",
+      "archetype": "PSY-Frame",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Use Multithreader, Losers",
+        "ban_ocg_reason": "Use Multithreader, Losers"
+      },
+      "card_images": [{
+        "id": 49036338,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/49036338.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/49036338.jpg"
+      }]
+    },
+    {
+      "id": 29948642,
+      "name": "Dig Beak",
+      "type": "Normal Monster",
+      "desc": "This beast coils like a snake, and strikes quickly with its snapping beak.",
+      "atk": 500,
+      "def": 800,
+      "level": 2,
+      "race": "Beast",
+      "attribute": "EARTH",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "FTK Enabler, Trust Me",
+        "ban_ocg_reason": "FTK Enabler, Trust Me"
+      },
+      "card_images": [{
+        "id": 29948642,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/29948642.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/29948642.jpg"
+      }]
+    },
+    {
+      "id": 47679935,
+      "name": "Magical Meltdown",
+      "type": "Spell Card",
+      "desc": "When this card is activated: You can add 1 \"Aleister the Invoker\" from your Deck to your hand. The activation of your cards and effects that include an effect that Fusion Summons a Fusion Monster cannot be negated, also your opponent's cards and effects cannot activate when a monster is Fusion Summoned this way. You can only activate 1 \"Magical Meltdown\" per turn.",
+      "race": "Field",
+      "archetype": "Invoked",
+      "banlist_info": {
+        "ban_tcg": "Semi-Limited",
+        "ban_ocg": "Semi-Limited",
+        "ban_tcg_reason": "Consistency Reduction",
+        "ban_ocg_reason": "Consistency Reduction"
+      },
+      "card_images": [{
+        "id": 47679935,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/47679935.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/47679935.jpg"
+      }]
+    },
+    {
+      "id": 9411399,
+      "name": "Destiny HERO - Malicious",
+      "type": "Effect Monster",
+      "desc": "You can banish this card from your GY; Special Summon 1 \"Destiny HERO - Malicious\" from your Deck.",
+      "atk": 800,
+      "def": 800,
+      "level": 6,
+      "race": "Warrior",
+      "attribute": "DARK",
+      "archetype": "Destiny HERO",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "SIGNIFICANT Consistency Reduction",
+        "ban_ocg_reason": "SIGNIFICANT Consistency Reduction"
+      },
+      "card_images": [{
+        "id": 9411399,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/9411399.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/9411399.jpg"
+      }]
+    },
+    {
+      "id": 10028593,
+      "name": "Reborn Tengu",
+      "type": "Effect Monster",
+      "desc": "If this face-up card leaves the field: Special Summon 1 \"Reborn Tengu\" from your Deck.",
+      "atk": 1700,
+      "def": 600,
+      "level": 4,
+      "race": "Beast-Warrior",
+      "attribute": "WIND",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "See Destiny HERO - Malicious",
+        "ban_ocg_reason": "See Destiny HERO - Malicious"
+      },
+      "card_images": [{
+        "id": 10028593,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/10028593.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/10028593.jpg"
+      }]
+    },
+    {
+      "id": 14558127,
+      "name": "Ash Blossom & Joyous Spring",
+      "type": "Tuner Monster",
+      "desc": "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect.\n● Add a card from the Deck to the hand.\n● Special Summon from the Deck.\n● Send a card from the Deck to the GY.\nYou can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.",
+      "atk": 0,
+      "def": 1800,
+      "level": 3,
+      "race": "Zombie",
+      "attribute": "FIRE",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Because you fuckers wouldn't stop talking about her FEET",
+        "ban_ocg_reason": "Because you fuckers wouldn't stop talking about her FEET"
+      },
+      "card_images": [{
+          "id": 14558127,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/14558127.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/14558127.jpg"
+        },
+        {
+          "id": 14558128,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/14558128.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/14558128.jpg"
+        }
+      ]
+    },
+    {
+      "id": 71344451,
+      "name": "Slash Draw",
+      "type": "Spell Card",
+      "desc": "Discard 1 card; send cards from the top of your Deck to the GY, equal to the number of cards your opponent controls, then draw 1 card and show it. Then, if it was \"Slash Draw\", send it to the GY, and if you do, destroy as many cards on the field as possible, then inflict 2000 damage to your opponent for each card destroyed and sent to the GY by this effect. If the card you drew was not \"Slash Draw\", shuffle cards from your GY into your Deck, equal to the number of cards sent from your Deck to the GY by this effect. You can only activate 1 \"Slash Draw\" per turn.",
+      "race": "Normal",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "slash this fat sack",
+        "ban_ocg_reason": "slash this fat sack"
+      },
+      "card_images": [{
+        "id": 71344451,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/71344451.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/71344451.jpg"
+      }]
+    },
+    {
+      "id": 24940422,
+      "name": "Sekka's Light",
+      "type": "Spell Card",
+      "desc": "If you have no Spells/Traps in your GY: Draw 2 cards, also, for the rest of this Duel after you activate this card, you cannot activate Spell/Trap Cards or effects, except \"Sekka's Light\". You can banish this card from your GY; reveal 1 monster in your hand, shuffle it into the Deck, then, draw 1 card. You can only use each effect of \"Sekka's Light\" once per turn.",
+      "race": "Normal",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "wait why was this limited again",
+        "ban_ocg_reason": "wait why was this limited again"
+      },
+      "card_images": [{
+        "id": 24940422,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24940422.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24940422.jpg"
+      }]
+    },
+    {
+      "id": 94689206,
+      "name": "Block Dragon",
+      "type": "Effect Monster",
+      "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand or GY) by banishing 3 EARTH monsters from your hand and/or GY. Rock monsters you control cannot be destroyed, except by battle. If this card is sent from the field to the GY: You can add up to 3 Rock monsters from your Deck to your hand, whose total Levels equal 8. You can only use this effect of \"Block Dragon\" once per turn.",
+      "atk": 2500,
+      "def": 3000,
+      "level": 8,
+      "race": "Rock",
+      "attribute": "EARTH",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "ooh he's just a lil boy...",
+        "ban_ocg_reason": "ooh he's just a lil boy..."
+      },
+      "card_images": [{
+        "id": 94689206,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/94689206.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/94689206.jpg"
+      }]
+    },
+    {
+      "id": 95144193,
+      "name": "Kwagar Hercules",
+      "type": "Fusion Monster",
+      "desc": "\"Kuwagata α\" + \"Hercules Beetle\"",
+      "atk": 1900,
+      "def": 1700,
+      "level": 6,
+      "race": "Insect",
+      "attribute": "EARTH",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "$200 for a fucking vanilla fusion",
+        "ban_ocg_reason": "$200 for a fucking vanilla fusion"
+      },
+      "card_images": [{
+        "id": 95144193,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/95144193.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/95144193.jpg"
+      }],
+      "card_prices": [{
+        "cardmarket_price": "40.70",
+        "tcgplayer_price": "66.59",
+        "ebay_price": "120.00",
+        "amazon_price": "18.01",
+        "coolstuffinc_price": "399.99"
+      }]
+    },
+    {
+      "id": 11110587,
+      "name": "That Grass Looks Greener",
+      "type": "Spell Card",
+      "desc": "If you have more cards in your Deck than your opponent does: Send cards from the top of your Deck to the Graveyard so you have the same number of cards in the Deck as your opponent.",
+      "race": "Normal",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "No Corporate Oversight",
+        "ban_ocg_reason": "No Corporate Oversight"
+      },
+      "card_images": [{
+        "id": 11110587,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/11110587.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/11110587.jpg"
+      }]
+    },
+    {
+      "id": 24224830,
+      "name": "Called by the Grave",
+      "type": "Spell Card",
+      "desc": "Target 1 monster in your opponent's GY; banish it, and if you do, until the end of the next turn, its effects are negated, as well as the activated effects and effects on the field of monsters with the same original name.",
+      "race": "Quick-Play",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "No Corporate Oversight",
+        "ban_ocg_reason": "No Corporate Oversight"
+      },
+      "card_images": [{
+        "id": 24224830,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24224830.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24224830.jpg"
+      }],
+      "card_prices": [{
+        "cardmarket_price": "1.73",
+        "tcgplayer_price": "2.07",
+        "ebay_price": "2.95",
+        "amazon_price": "3.99",
+        "coolstuffinc_price": "3.99"
+      }]
+    },
+    {
+      "id": 82385847,
+      "name": "Dinowrestler Pankratops",
+      "type": "Effect Monster",
+      "desc": "If your opponent controls more monsters than you do, you can Special Summon this card (from your hand). You can only Special Summon \"Dinowrestler Pankratops\" once per turn this way. (Quick Effect): You can Tribute 1 \"Dinowrestler\" monster, then target 1 card your opponent controls; destroy it. You can only use this effect of \"Dinowrestler Pankratops\" once per turn.",
+      "atk": 2600,
+      "def": 0,
+      "level": 7,
+      "race": "Dinosaur",
+      "attribute": "EARTH",
+      "archetype": "Dinowrestler",
+      "banlist_info": {
+        "ban_tcg": "Semi-Limited",
+        "ban_ocg": "Semi-Limited",
+        "ban_tcg_reason": "Experimentation",
+        "ban_ocg_reason": "Experimentation"
+      },
+      "card_images": [{
+        "id": 82385847,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/82385847.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/82385847.jpg"
+      }]
+    },
+    {
+      "id": 71650854,
+      "name": "Magical Mid-Breaker Field",
+      "type": "Spell Card",
+      "desc": "Activate this card at the start of your Main Phase 1 or 2. During each player's Main Phase 1, monsters on the field cannot be destroyed by their opponent's card effects, also neither player can target monsters their opponent controls. You cannot activate or Set Field Spell Cards.",
+      "race": "Field",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "Experimentation",
+        "ban_ocg_reason": "Experimentation"
+      },
+      "card_images": [{
+        "id": 71650854,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/71650854.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/71650854.jpg"
+      }]
+    },
+    {
+      "id": 76375976,
+      "name": "Mystic Mine",
+      "type": "Spell Card",
+      "desc": "If your opponent controls more monsters than you do, your opponent cannot activate monster effects or declare an attack. If you control more monsters than your opponent does, you cannot activate monster effects or declare an attack. Once per turn, during the End Phase, if both players control the same number of monsters: Destroy this card.",
+      "race": "Field",
+      "banlist_info": {
+        "ban_tcg": "Banned",
+        "ban_ocg": "Banned",
+        "ban_tcg_reason": "Unfair Gamestate",
+        "ban_ocg_reason": "Unfair Gamestate"
+      },
+      "card_images": [{
+        "id": 76375976,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/76375976.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/76375976.jpg"
       }]
     }
   ]

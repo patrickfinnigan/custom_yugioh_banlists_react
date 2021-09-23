@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import CustomBanlistLable from "./CustomBanlistLable.js";
+import PublicBanlistLable from "./PublicBanlistLable.js";
 import NormalMonsters from "./NormalMonsters.js";
 import EffectMonsters from "./EffectMonsters.js";
 import FusionMonsters from "./FusionMonsters.js";
@@ -15,13 +15,13 @@ import XYZMonsters from "./XYZMonsters.js";
 import SpellCards from "./SpellCards.js";
 import TrapCards from "./TrapCards.js";
 
-import testbanlist from "../../public/testbanlist.json";
+import publicbanlist from "../../public/publicbanlist.json";
 
-export default function CustomBanlistForbidden() {
-  console.log(testbanlist.data);
+export default function PublicBanlistSemiLimited() {
+  console.log(publicbanlist.data);
   const [data] = useState([]);
 
-  testbanlist.data.sort(function (a, b) {
+  publicbanlist.data.sort(function (a, b) {
     return a.name > b.name;
   });
 
@@ -29,17 +29,17 @@ export default function CustomBanlistForbidden() {
     <>
       <Card>
         <Card.Body>
-          <h2>Forbidden: Reality can be Whatever I Want</h2>
+          <h2>Semi-Limited</h2>
           <div className="user-container">
             <Table bordered>
-              <CustomBanlistLable />
+              <PublicBanlistLable />
               <tbody>
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Normal Monster" &&
-                          card.banlist_info.ban_tcg === "Forbidden"
+                          card.banlist_info.ban_tcg === "Semi-Limited"
                       )
                       .map((card) => (
                         <NormalMonsters
@@ -60,11 +60,11 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Effect Monster" &&
-                          card.banlist_info.ban_tcg === "Forbidden"
+                          card.banlist_info.ban_tcg === "Semi-Limited"
                       )
                       .map((card) => (
                         <EffectMonsters
@@ -85,11 +85,11 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Fusion Monster" &&
-                          card.banlist_info.ban_tcg === "Forbidden"
+                          card.banlist_info.ban_tcg === "Semi-Limited"
                       )
                       .map((card) => (
                         <FusionMonsters
@@ -110,11 +110,11 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Link Monster" &&
-                          card.banlist_info.ban_tcg === "Forbidden"
+                          card.banlist_info.ban_tcg === "Semi-Limited"
                       )
                       .map((card) => (
                         <LinkMonsters
@@ -135,11 +135,11 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Synchro Monster" &&
-                          card.banlist_info.ban_tcg === "Forbidden"
+                          card.banlist_info.ban_tcg === "Semi-Limited"
                       )
                       .map((card) => (
                         <SynchroMonsters
@@ -160,11 +160,11 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "XYZ Monster" &&
-                          card.banlist_info.ban_tcg === "Forbidden"
+                          card.banlist_info.ban_tcg === "Semi-Limited"
                       )
                       .map((card) => (
                         <XYZMonsters
@@ -185,11 +185,11 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Spell Card" &&
-                          card.banlist_info.ban_tcg === "Forbidden"
+                          card.banlist_info.ban_tcg === "Semi-Limited"
                       )
                       .map((card) => (
                         <SpellCards
@@ -210,11 +210,11 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Trap Card" &&
-                          card.banlist_info.ban_tcg === "Forbidden"
+                          card.banlist_info.ban_tcg === "Semi-Limited"
                       )
                       .map((card) => (
                         <TrapCards
@@ -246,31 +246,31 @@ export default function CustomBanlistForbidden() {
     </>
   );
 }
-// function TradingCard({ name, type, desc, atk, def, level, race }) {
-//   return (
-//     <div>
-//       <dl>
-//         <dt>Name:</dt>
-//         <dd>{name}</dd>
+function TradingCard({ name, type, desc, atk, def, level, race }) {
+  return (
+    <div>
+      <dl>
+        <dt>Name:</dt>
+        <dd>{name}</dd>
 
-//         <dt>Type:</dt>
-//         <dd>{type}</dd>
+        <dt>Type:</dt>
+        <dd>{type}</dd>
 
-//         <dt>Description:</dt>
-//         <dd>{desc}</dd>
+        <dt>Description:</dt>
+        <dd>{desc}</dd>
 
-//         <dt>Attack:</dt>
-//         <dd>{atk}</dd>
+        <dt>Attack:</dt>
+        <dd>{atk}</dd>
 
-//         <dt>Deferense:</dt>
-//         <dd>{def}</dd>
+        <dt>Deferense:</dt>
+        <dd>{def}</dd>
 
-//         <dt>Level:</dt>
-//         <dd>{level}</dd>
+        <dt>Level:</dt>
+        <dd>{level}</dd>
 
-//         <dt>Race:</dt>
-//         <dd>{race}</dd>
-//       </dl>
-//     </div>
-//   );
-// }
+        <dt>Race:</dt>
+        <dd>{race}</dd>
+      </dl>
+    </div>
+  );
+}

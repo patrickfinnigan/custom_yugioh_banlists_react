@@ -11,6 +11,7 @@ export default function MainNavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+            <Nav.Link href="/public-banlist">Public Banlist</Nav.Link>
             <Nav.Link href="/budget-banlist">Budget Banlist</Nav.Link>
             <Nav.Link href="/pauper-banlist">Pauper Banlist</Nav.Link>
             {/* <Nav.Link href="/test-page">Test Page</Nav.Link> */}

@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import CustomBanlistLable from "./CustomBanlistLable.js";
+import PublicBanlistLable from "./PublicBanlistLable.js";
 import NormalMonsters from "./NormalMonsters.js";
 import EffectMonsters from "./EffectMonsters.js";
 import FusionMonsters from "./FusionMonsters.js";
@@ -15,13 +15,13 @@ import XYZMonsters from "./XYZMonsters.js";
 import SpellCards from "./SpellCards.js";
 import TrapCards from "./TrapCards.js";
 
-import testbanlist from "../../public/testbanlist.json";
+import publicbanlist from "../../public/publicbanlist.json";
 
-export default function CustomBanlistForbidden() {
-  console.log(testbanlist.data);
+export default function PublicBanlistForbidden() {
+  console.log(publicbanlist.data);
   const [data] = useState([]);
 
-  testbanlist.data.sort(function (a, b) {
+  publicbanlist.data.sort(function (a, b) {
     return a.name > b.name;
   });
 
@@ -29,13 +29,13 @@ export default function CustomBanlistForbidden() {
     <>
       <Card>
         <Card.Body>
-          <h2>Forbidden: Reality can be Whatever I Want</h2>
+          <h2>Forbidden</h2>
           <div className="user-container">
             <Table bordered>
-              <CustomBanlistLable />
+              <PublicBanlistLable />
               <tbody>
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Normal Monster" &&
@@ -60,7 +60,7 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Effect Monster" &&
@@ -85,7 +85,7 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Fusion Monster" &&
@@ -110,7 +110,7 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Link Monster" &&
@@ -135,7 +135,7 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Synchro Monster" &&
@@ -160,7 +160,7 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "XYZ Monster" &&
@@ -185,7 +185,7 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Spell Card" &&
@@ -210,7 +210,7 @@ export default function CustomBanlistForbidden() {
                       ))
                   : null}
                 {data
-                  ? testbanlist.data
+                  ? publicbanlist.data
                       .filter(
                         (card) =>
                           card.type === "Trap Card" &&
