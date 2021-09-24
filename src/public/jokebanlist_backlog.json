@@ -1,0 +1,115 @@
+{
+  "data": [{
+      "id": 59057152,
+      "name": "Noble Knight Medraut",
+      "type": "Effect Monster",
+      "desc": "This card is treated as a Normal Monster while face-up on the field. While equipped with a \"Noble Arms\" Equip Spell, this card becomes an Effect Monster with this effect.\n● This card becomes DARK and its Level is increased by 1. Once per turn, if you control no other monsters: You can Special Summon 1 \"Noble Knight\" monster from your Deck in Defense Position, except \"Noble Knight Medraut\", and if you do, destroy 1 Equip Spell you control.",
+      "atk": 1700,
+      "def": 1000,
+      "level": 4,
+      "race": "Warrior",
+      "attribute": "LIGHT",
+      "archetype": "Noble Knight",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "degenerate combo starter",
+        "ban_ocg_reason": "degenerate combo starter"
+      },
+      "card_images": [{
+        "id": 59057152,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/59057152.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/59057152.jpg"
+      }]
+    },
+    {
+      "id": 53936268,
+      "name": "Personal Spoofing",
+      "type": "Trap Card",
+      "desc": "Once per turn: You can shuffle 1 \"Altergeist\" card from your hand or face-up from your field into the Main Deck; add 1 \"Altergeist\" monster from your Deck to your hand.",
+      "race": "Continuous",
+      "archetype": "Altergeist",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Altergeist is poopy",
+        "ban_ocg_reason": "Altergeist is poopy"
+      },
+      "card_images": [{
+        "id": 53936268,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/53936268.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/53936268.jpg"
+      }],
+      "card_prices": [{
+        "cardmarket_price": "0.21",
+        "tcgplayer_price": "1.55",
+        "ebay_price": "4.95",
+        "amazon_price": "4.99",
+        "coolstuffinc_price": "1.49"
+      }]
+    },
+    {
+      "id": 42790071,
+      "name": "Altergeist Multifaker",
+      "type": "Effect Monster",
+      "desc": "If you activate a Trap Card (except during the Damage Step): You can Special Summon this card from your hand. If this card is Special Summoned: You can Special Summon 1 \"Altergeist\" monster from your Deck in Defense Position, except \"Altergeist Multifaker\". You cannot Special Summon monsters the turn you activate this effect, except \"Altergeist\" monsters. You can only use each effect of \"Altergeist Multifaker\" once per turn.",
+      "atk": 1200,
+      "def": 800,
+      "level": 3,
+      "race": "Spellcaster",
+      "attribute": "DARK",
+      "archetype": "Altergeist",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Altergeist is poopy",
+        "ban_ocg_reason": "Altergeist is poopy"
+      },
+      "card_images": [{
+        "id": 42790071,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/42790071.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/42790071.jpg"
+      }]
+    },
+    {
+      "id": 24207889,
+      "name": "There Can Be Only One",
+      "type": "Trap Card",
+      "desc": "Each player can only control 1 monster of each Type. If a player controls 2 or more monsters of the same Type, they must send some to the GY so they control no more than 1 monster of that Type.",
+      "race": "Continuous",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Get it? ONLY one?",
+        "ban_ocg_reason": "Get it? ONLY one?"
+      },
+      "card_images": [{
+        "id": 24207889,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24207889.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24207889.jpg"
+      }]
+    },
+    {
+      "id": 90448279,
+      "name": "Divine Arsenal AA-ZEUS - Sky Thunder",
+      "type": "XYZ Monster",
+      "desc": "2 Level 12 monsters\r\nOnce per turn, if an Xyz Monster battled this turn, you can also Xyz Summon \"Divine Arsenal AA-ZEUS - Sky Thunder\" by using 1 Xyz Monster you control as material. (Transfer its materials to this card.) (Quick Effect): You can detach 2 materials from this card; send all other cards from the field to the GY. Once per turn, if another card(s) you control is destroyed by battle or an opponent's card effect: You can attach 1 card from your hand, Deck, or Extra Deck to this card as material.",
+      "atk": 3000,
+      "def": 3000,
+      "level": 12,
+      "race": "Machine",
+      "attribute": "LIGHT",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "False Advertising (Neither Divine Nor Thunder-type)",
+        "ban_ocg_reason": "False Advertising (Neither Divine Nor Thunder-type)"
+      },
+      "card_images": [{
+        "id": 90448279,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/90448279.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/90448279.jpg"
+      }]
+    }
+  ]
+}

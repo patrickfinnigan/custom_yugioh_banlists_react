@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators */
 import React, { useState, useEffect } from "react";
 
 //Bootstrap imports
@@ -5,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import CustomBanlistLable from "./PublicBanlistLable.js";
+import PublicBanlistLable from "./PublicBanlistLable.js";
 import NormalMonsters from "./NormalMonsters.js";
 import EffectMonsters from "./EffectMonsters.js";
 import FusionMonsters from "./FusionMonsters.js";
@@ -21,7 +22,7 @@ export default function PublicBanlistLimited() {
   console.log(publicbanlist.data);
   const [data] = useState([]);
 
-  publicbanlist.data.sort(function(a, b) {
+  publicbanlist.data.sort(function (a, b) {
     return a.name > b.name;
   });
 
@@ -32,14 +33,20 @@ export default function PublicBanlistLimited() {
           <h2>Limited</h2>
           <div className="user-container">
             <Table bordered>
-              <CustomBanlistLable />
+              <PublicBanlistLable />
               <tbody>
                 {data
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "Normal Monster" &&
-                          card.banlist_info.ban_tcg === "Limited"
+                          (card.type === "Normal Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Normal Tuner Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Pendulum Normal Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Ritual Monster" &&
+                            card.banlist_info.ban_tcg === "Limited")
                       )
                       .map((card) => (
                         <NormalMonsters
@@ -55,6 +62,7 @@ export default function PublicBanlistLimited() {
                               .replace("@", "%40")
                           }
                           status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
@@ -62,8 +70,32 @@ export default function PublicBanlistLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "Effect Monster" &&
-                          card.banlist_info.ban_tcg === "Limited"
+                          (card.type === "Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Tuner Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Flip Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Flip Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Flip Tuner Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Gemini Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Union Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Pendulum Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Pendulum Flip Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Pendulum Tuner Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Ritual Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Toon Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Spirit Monster" &&
+                            card.banlist_info.ban_tcg === "Limited")
                       )
                       .map((card) => (
                         <EffectMonsters
@@ -79,6 +111,7 @@ export default function PublicBanlistLimited() {
                               .replace("@", "%40")
                           }
                           status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
@@ -86,8 +119,10 @@ export default function PublicBanlistLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "Fusion Monster" &&
-                          card.banlist_info.ban_tcg === "Limited"
+                          (card.type === "Fusion Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Pendulum Effect Fusion Monster" &&
+                            card.banlist_info.ban_tcg === "Limited")
                       )
                       .map((card) => (
                         <FusionMonsters
@@ -103,6 +138,7 @@ export default function PublicBanlistLimited() {
                               .replace("@", "%40")
                           }
                           status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
@@ -127,6 +163,7 @@ export default function PublicBanlistLimited() {
                               .replace("@", "%40")
                           }
                           status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
@@ -134,8 +171,12 @@ export default function PublicBanlistLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "Synchro Monster" &&
-                          card.banlist_info.ban_tcg === "Limited"
+                          (card.type === "Synchro Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Synchro Pendulum Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "Synchro Tuner Monster" &&
+                            card.banlist_info.ban_tcg === "Limited")
                       )
                       .map((card) => (
                         <SynchroMonsters
@@ -151,6 +192,7 @@ export default function PublicBanlistLimited() {
                               .replace("@", "%40")
                           }
                           status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
@@ -158,8 +200,10 @@ export default function PublicBanlistLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "XYZ Monster" &&
-                          card.banlist_info.ban_tcg === "Limited"
+                          (card.type === "XYZ Monster" &&
+                            card.banlist_info.ban_tcg === "Limited") ||
+                          (card.type === "XYZ Pendulum Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Limited")
                       )
                       .map((card) => (
                         <XYZMonsters
@@ -175,6 +219,7 @@ export default function PublicBanlistLimited() {
                               .replace("@", "%40")
                           }
                           status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
@@ -200,6 +245,7 @@ export default function PublicBanlistLimited() {
                           }
                           status={card.banlist_info.ban_tcg}
                           reason_restricted={card.banlist_info.ban_tcg_reason}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
@@ -224,6 +270,7 @@ export default function PublicBanlistLimited() {
                               .replace("@", "%40")
                           }
                           status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                           reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))

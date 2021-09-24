@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 
 //Local Imports
-import PauperBanlistLable from "./PauperBanlistLable.js";
+import JokeBanlistLable from "./JokeBanlistLable.js";
 import NormalMonsters from "./NormalMonsters.js";
 import EffectMonsters from "./EffectMonsters.js";
 import FusionMonsters from "./FusionMonsters.js";
@@ -16,82 +16,37 @@ import XYZMonsters from "./XYZMonsters.js";
 import SpellCards from "./SpellCards.js";
 import TrapCards from "./TrapCards.js";
 
-import { YGoService } from "../../services/ygopro_axios.js";
+import jokebanlist from "../../public/jokebanlist.json";
 
-export default function PauperBanlistForbidden() {
-  const [data, setData] = useState([]);
+export default function PublicBanlistForbidden() {
+  console.log(jokebanlist.data);
+  const [data] = useState([]);
 
-  useEffect(() => {
-    YGoService.getCardInfo()
-      .then((info) => {
-        setData(info);
-      })
-      .catch((error) => console.error(`Error: ${error}`));
-  }, []);
-
-  function cardRarity(card) {
-    let { card_sets } = card;
-
-    if (card_sets === undefined) {
-      return;
-    }
-
-    let raritySearch = {
-      ...card_sets
-        .filter((set) => set.set_rarity_code !== undefined)
-        .map((set) => set.set_rarity_code),
-    };
-
-    if (Object.values(raritySearch).includes("(C)")) {
-      return;
-    } else if (Object.values(raritySearch).includes("(R)")) {
-      return;
-    } else if (Object.values(raritySearch).includes("(SP)")) {
-      return;
-    }
-
-    let currentCardRarities = [];
-
-    for (const [key, value] of Object.entries(raritySearch)) {
-      if (
-        currentCardRarities.indexOf(
-          value.replace("(", "").replace(")", ", ")
-        ) !== -1
-      ) {
-        return;
-      } else {
-        currentCardRarities += value.replace("(", "").replace(")", ", ");
-      }
-    }
-
-    return currentCardRarities.slice(0, -2);
-  }
+  jokebanlist.data.sort(function (a, b) {
+    return a.name > b.name;
+  });
 
   return (
     <>
       <Card>
         <Card.Body>
-          <h2>Forbidden: No avalible Common or Rare printings</h2>
+          <h2>Forbidden</h2>
           <div className="user-container">
             <Table bordered>
-              <PauperBanlistLable />
+              <JokeBanlistLable />
               <tbody>
                 {data
-                  ? data
+                  ? jokebanlist.data
                       .filter(
                         (card) =>
                           (card.type === "Normal Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Normal Tuner Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Pendulum Normal Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Ritual Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined)
+                            card.banlist_info.ban_tcg === "Forbidden")
                       )
                       .map((card) => (
                         <NormalMonsters
@@ -106,54 +61,41 @@ export default function PauperBanlistForbidden() {
                               .replace(":", "%3A")
                               .replace("@", "%40")
                           }
-                          status="Forbidden"
-                          rarity={cardRarity(card)}
+                          status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
                 {data
-                  ? data
+                  ? jokebanlist.data
                       .filter(
                         (card) =>
                           (card.type === "Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Tuner Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Flip Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Flip Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Flip Tuner Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Gemini Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Union Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Pendulum Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Pendulum Flip Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Pendulum Tuner Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Ritual Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Toon Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Spirit Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined)
+                            card.banlist_info.ban_tcg === "Forbidden")
                       )
                       .map((card) => (
                         <EffectMonsters
@@ -168,21 +110,19 @@ export default function PauperBanlistForbidden() {
                               .replace(":", "%3A")
                               .replace("@", "%40")
                           }
-                          status="Forbidden"
-                          rarity={cardRarity(card)}
+                          status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
                 {data
-                  ? data
+                  ? jokebanlist.data
                       .filter(
                         (card) =>
                           (card.type === "Fusion Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Pendulum Effect Fusion Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined)
+                            card.banlist_info.ban_tcg === "Forbidden")
                       )
                       .map((card) => (
                         <FusionMonsters
@@ -197,18 +137,17 @@ export default function PauperBanlistForbidden() {
                               .replace(":", "%3A")
                               .replace("@", "%40")
                           }
-                          status="Forbidden"
-                          rarity={cardRarity(card)}
+                          status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
                 {data
-                  ? data
+                  ? jokebanlist.data
                       .filter(
                         (card) =>
                           card.type === "Link Monster" &&
-                          card.card_sets !== undefined &&
-                          cardRarity(card) !== undefined
+                          card.banlist_info.ban_tcg === "Forbidden"
                       )
                       .map((card) => (
                         <LinkMonsters
@@ -223,24 +162,21 @@ export default function PauperBanlistForbidden() {
                               .replace(":", "%3A")
                               .replace("@", "%40")
                           }
-                          status="Forbidden"
-                          rarity={cardRarity(card)}
+                          status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
                 {data
-                  ? data
+                  ? jokebanlist.data
                       .filter(
                         (card) =>
                           (card.type === "Synchro Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Synchro Pendulum Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "Synchro Tuner Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined)
+                            card.banlist_info.ban_tcg === "Forbidden")
                       )
                       .map((card) => (
                         <SynchroMonsters
@@ -255,21 +191,19 @@ export default function PauperBanlistForbidden() {
                               .replace(":", "%3A")
                               .replace("@", "%40")
                           }
-                          status="Forbidden"
-                          rarity={cardRarity(card)}
+                          status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
                 {data
-                  ? data
+                  ? jokebanlist.data
                       .filter(
                         (card) =>
                           (card.type === "XYZ Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined) ||
+                            card.banlist_info.ban_tcg === "Forbidden") ||
                           (card.type === "XYZ Pendulum Effect Monster" &&
-                            card.card_sets !== undefined &&
-                            cardRarity(card) !== undefined)
+                            card.banlist_info.ban_tcg === "Forbidden")
                       )
                       .map((card) => (
                         <XYZMonsters
@@ -284,18 +218,17 @@ export default function PauperBanlistForbidden() {
                               .replace(":", "%3A")
                               .replace("@", "%40")
                           }
-                          status="Forbidden"
-                          rarity={cardRarity(card)}
+                          status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
                 {data
-                  ? data
+                  ? jokebanlist.data
                       .filter(
                         (card) =>
                           card.type === "Spell Card" &&
-                          card.card_sets !== undefined &&
-                          cardRarity(card) !== undefined
+                          card.banlist_info.ban_tcg === "Forbidden"
                       )
                       .map((card) => (
                         <SpellCards
@@ -310,18 +243,17 @@ export default function PauperBanlistForbidden() {
                               .replace(":", "%3A")
                               .replace("@", "%40")
                           }
-                          status="Forbidden"
-                          rarity={cardRarity(card)}
+                          status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
                 {data
-                  ? data
+                  ? jokebanlist.data
                       .filter(
                         (card) =>
                           card.type === "Trap Card" &&
-                          card.card_sets !== undefined &&
-                          cardRarity(card) !== undefined
+                          card.banlist_info.ban_tcg === "Forbidden"
                       )
                       .map((card) => (
                         <TrapCards
@@ -336,8 +268,8 @@ export default function PauperBanlistForbidden() {
                               .replace(":", "%3A")
                               .replace("@", "%40")
                           }
-                          status="Forbidden"
-                          rarity={cardRarity(card)}
+                          status={card.banlist_info.ban_tcg}
+                          reason_restricted={card.banlist_info.ban_tcg_reason}
                         />
                       ))
                   : null}
@@ -353,31 +285,31 @@ export default function PauperBanlistForbidden() {
     </>
   );
 }
-function TradingCard({ name, type, desc, atk, def, level, race }) {
-  return (
-    <div>
-      <dl>
-        <dt>Name:</dt>
-        <dd>{name}</dd>
+// function TradingCard({ name, type, desc, atk, def, level, race }) {
+//   return (
+//     <div>
+//       <dl>
+//         <dt>Name:</dt>
+//         <dd>{name}</dd>
 
-        <dt>Type:</dt>
-        <dd>{type}</dd>
+//         <dt>Type:</dt>
+//         <dd>{type}</dd>
 
-        <dt>Description:</dt>
-        <dd>{desc}</dd>
+//         <dt>Description:</dt>
+//         <dd>{desc}</dd>
 
-        <dt>Attack:</dt>
-        <dd>{atk}</dd>
+//         <dt>Attack:</dt>
+//         <dd>{atk}</dd>
 
-        <dt>Deferense:</dt>
-        <dd>{def}</dd>
+//         <dt>Deferense:</dt>
+//         <dd>{def}</dd>
 
-        <dt>Level:</dt>
-        <dd>{level}</dd>
+//         <dt>Level:</dt>
+//         <dd>{level}</dd>
 
-        <dt>Race:</dt>
-        <dd>{race}</dd>
-      </dl>
-    </div>
-  );
-}
+//         <dt>Race:</dt>
+//         <dd>{race}</dd>
+//       </dl>
+//     </div>
+//   );
+// }

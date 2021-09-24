@@ -12,6 +12,7 @@ import "./stylesheets/main.scss";
 import PublicBanlistView from "./views/PublicBanlistView.js";
 import BudgetBanlistView from "./views/BudgetBanlistView.js";
 import PauperBanlistView from "./views/PauperBanlistView.js";
+import JokeBanlistView from "./views/JokeBanlistView.js";
 import TestView from "./views/TestView.js";
 import ContactTemp from "./views/ContactTemp.js";
 
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Route path="/public-banlist" component={PublicBanlistView} />
       <Route path="/budget-banlist" component={BudgetBanlistView} />
       <Route path="/pauper-banlist" component={PauperBanlistView} />
+      <Route path="/joke-banlist" component={JokeBanlistView} />
       <Route path="/test-page" component={TestView} />
       <Route path="/contact" component={ContactTemp} />
       <Route path="/" component={PublicBanlistView} />

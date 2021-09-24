@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators */
 import React, { useState, useEffect } from "react";
 
 //Bootstrap imports
@@ -38,8 +39,14 @@ export default function PublicBanlistSemiLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "Normal Monster" &&
-                          card.banlist_info.ban_tcg === "Semi-Limited"
+                          (card.type === "Normal Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Normal Tuner Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Pendulum Normal Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Ritual Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited")
                       )
                       .map((card) => (
                         <NormalMonsters
@@ -63,8 +70,32 @@ export default function PublicBanlistSemiLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "Effect Monster" &&
-                          card.banlist_info.ban_tcg === "Semi-Limited"
+                          (card.type === "Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Tuner Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Flip Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Flip Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Flip Tuner Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Gemini Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Union Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Pendulum Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Pendulum Flip Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Pendulum Tuner Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Ritual Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Toon Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Spirit Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited")
                       )
                       .map((card) => (
                         <EffectMonsters
@@ -88,8 +119,10 @@ export default function PublicBanlistSemiLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "Fusion Monster" &&
-                          card.banlist_info.ban_tcg === "Semi-Limited"
+                          (card.type === "Fusion Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Pendulum Effect Fusion Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited")
                       )
                       .map((card) => (
                         <FusionMonsters
@@ -138,8 +171,12 @@ export default function PublicBanlistSemiLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "Synchro Monster" &&
-                          card.banlist_info.ban_tcg === "Semi-Limited"
+                          (card.type === "Synchro Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Synchro Pendulum Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "Synchro Tuner Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited")
                       )
                       .map((card) => (
                         <SynchroMonsters
@@ -163,8 +200,10 @@ export default function PublicBanlistSemiLimited() {
                   ? publicbanlist.data
                       .filter(
                         (card) =>
-                          card.type === "XYZ Monster" &&
-                          card.banlist_info.ban_tcg === "Semi-Limited"
+                          (card.type === "XYZ Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
+                          (card.type === "XYZ Pendulum Effect Monster" &&
+                            card.banlist_info.ban_tcg === "Semi-Limited")
                       )
                       .map((card) => (
                         <XYZMonsters

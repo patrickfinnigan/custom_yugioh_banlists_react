@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators */
 import React, { useState, useEffect } from "react";
 
 //Bootstrap imports
@@ -79,9 +80,18 @@ export default function PauperBanlistLimited() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "Normal Monster" &&
-                          card.card_sets !== undefined &&
-                          cardRarity(card) !== undefined
+                          (card.type === "Normal Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Normal Tuner Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Pendulum Normal Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Ritual Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined)
                       )
                       .map((card) => (
                         <NormalMonsters
@@ -105,9 +115,45 @@ export default function PauperBanlistLimited() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "Effect Monster" &&
-                          card.card_sets !== undefined &&
-                          cardRarity(card) !== undefined
+                          (card.type === "Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Tuner Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Flip Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Flip Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Flip Tuner Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Gemini Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Union Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Pendulum Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Pendulum Flip Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Pendulum Tuner Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Ritual Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Toon Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Spirit Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined)
                       )
                       .map((card) => (
                         <EffectMonsters
@@ -131,9 +177,12 @@ export default function PauperBanlistLimited() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "Fusion Monster" &&
-                          card.card_sets !== undefined &&
-                          cardRarity(card) !== undefined
+                          (card.type === "Fusion Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Pendulum Effect Fusion Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined)
                       )
                       .map((card) => (
                         <FusionMonsters
@@ -183,9 +232,15 @@ export default function PauperBanlistLimited() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "Synchro Monster" &&
-                          card.card_sets !== undefined &&
-                          cardRarity(card) !== undefined
+                          (card.type === "Synchro Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Synchro Pendulum Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "Synchro Tuner Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined)
                       )
                       .map((card) => (
                         <SynchroMonsters
@@ -209,9 +264,12 @@ export default function PauperBanlistLimited() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "XYZ Monster" &&
-                          card.card_sets !== undefined &&
-                          cardRarity(card) !== undefined
+                          (card.type === "XYZ Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined) ||
+                          (card.type === "XYZ Pendulum Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            cardRarity(card) !== undefined)
                       )
                       .map((card) => (
                         <XYZMonsters

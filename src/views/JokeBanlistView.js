@@ -6,12 +6,12 @@ import Col from "react-bootstrap/Col";
 //Local Imports
 import MainNavBar from "../components/GeneralComponents/MainNavBar.js";
 // import SearchBox from "../components/GeneralComponents/SearchBox.js";
-import PublicBanlistForbidden from "../components/PublicBanlist/PublicBanlistForbidden.js";
-import PublicBanlistLimited from "../components/PublicBanlist/PublicBanlistLimited.js";
-import PublicBanlistSemiLimited from "../components/PublicBanlist/PublicBanlistSemiLimited.js";
-import PublicBanlistUnlimited from "../components/PublicBanlist/PublicBanlistUnlimited.js";
+import JokeBanlistForbidden from "../components/JokeBanlist/JokeBanlistForbidden.js";
+import JokeBanlistLimited from "../components/JokeBanlist/JokeBanlistLimited.js";
+import JokeBanlistSemiLimited from "../components/JokeBanlist/JokeBanlistSemiLimited.js";
+import JokeBanlistUnlimited from "../components/JokeBanlist/JokeBanlistUnlimited.js";
 
-export default function PublicBanlistView() {
+export default function JokeBanlistView() {
   return (
     <div>
       <header>
@@ -23,13 +23,13 @@ export default function PublicBanlistView() {
           <Col>
             {/* <SearchBox /> */}
             {/* <br /> */}
-            <PublicBanlistForbidden />
+            <JokeBanlistForbidden />
             <br />
-            <PublicBanlistLimited />
+            <JokeBanlistLimited />
             <br />
-            <PublicBanlistSemiLimited />
+            <JokeBanlistSemiLimited />
             <br />
-            <PublicBanlistUnlimited />
+            <JokeBanlistUnlimited />
             <br />
           </Col>
         </Row>

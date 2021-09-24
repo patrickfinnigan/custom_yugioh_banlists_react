@@ -16,9 +16,10 @@ export default function MainNavBar() {
             <Nav.Link href="/pauper-banlist">Pauper Banlist</Nav.Link>
             {/* <Nav.Link href="/test-page">Test Page</Nav.Link> */}
             <NavDropdown title="Other Links" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/joke-banlist">Joke Banlist</NavDropdown.Item>
               <NavDropdown.Item href="/">About</NavDropdown.Item>
               <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
-              <NavDropdown.Item href="/test-page">Test Page</NavDropdown.Item>
+              {/* <NavDropdown.Item href="/test-page">Test Page</NavDropdown.Item> */}
               <NavDropdown.Divider />
               <NavDropdown.Item href="/">
                 Separated link

@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators */
 import React, { useState, useEffect } from "react";
 
 //Bootstrap imports
@@ -18,7 +19,7 @@ import TrapCards from "./TrapCards.js";
 import { YGoService } from "../../services/ygopro_axios.js";
 
 export default function BudgetBanlistForbidden() {
-  const startprice = 10;
+  const startprice = 20;
   const endprice = 99999.99;
   const [data, setData] = useState([]);
 
@@ -55,18 +56,6 @@ export default function BudgetBanlistForbidden() {
     return formatter.format(minPrice);
   }
 
-  // function forbiddenCards(card) {
-  //   let { banlist_info } = card;
-
-  //   if (banlist_info === undefined) {
-  //     return;
-  //   }
-
-  //   return Object.values(banlist_info)
-  //     .filter((set) => set.ban_tcg === "Banned")
-  //     .map((set) => set.ban_tcg);
-  // }
-
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -86,9 +75,18 @@ export default function BudgetBanlistForbidden() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "Normal Monster" &&
-                          card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          (card.type === "Normal Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Normal Tuner Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Pendulum Normal Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Ritual Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined)
                       )
                       .map((card) => (
                         <NormalMonsters
@@ -113,9 +111,45 @@ export default function BudgetBanlistForbidden() {
                       // .filter((card) => forbiddenCards(card) === "Banned")
                       .filter(
                         (card) =>
-                          card.type === "Effect Monster" &&
-                          card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          (card.type === "Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Tuner Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Flip Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Flip Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Flip Tuner Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Gemini Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Union Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Pendulum Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Pendulum Flip Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Pendulum Tuner Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Ritual Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Toon Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Spirit Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined)
                       )
                       .map((card) => (
                         <EffectMonsters
@@ -139,9 +173,12 @@ export default function BudgetBanlistForbidden() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "Fusion Monster" &&
-                          card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          (card.type === "Fusion Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Pendulum Effect Fusion Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined)
                       )
                       .map((card) => (
                         <FusionMonsters
@@ -191,9 +228,15 @@ export default function BudgetBanlistForbidden() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "Synchro Monster" &&
-                          card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          (card.type === "Synchro Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Synchro Pendulum Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "Synchro Tuner Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined)
                       )
                       .map((card) => (
                         <SynchroMonsters
@@ -217,9 +260,12 @@ export default function BudgetBanlistForbidden() {
                   ? data
                       .filter(
                         (card) =>
-                          card.type === "XYZ Monster" &&
-                          card.card_sets !== undefined &&
-                          minPrice(card) !== undefined
+                          (card.type === "XYZ Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined) ||
+                          (card.type === "XYZ Pendulum Effect Monster" &&
+                            card.card_sets !== undefined &&
+                            minPrice(card) !== undefined)
                       )
                       .map((card) => (
                         <XYZMonsters
