@@ -30,6 +30,11 @@ export default function ContactTemp() {
                   </Button>{' '}
                   <br />
                   <br />
+                  <Button variant="info" href="https://docs.google.com/forms/d/e/1FAIpQLScK2mlUx2m_rieXY_536cXBskuUq37uaPZSDSyRWD0cuTMW7Q/viewform?usp=sf_link" target="_blank" rel="noreferrer">
+                    submit card hits and unlimits (either public or for jokin' around)
+                  </Button>{' '}
+                  <br />
+                  <br />
                   <Button variant="info" href="https://twitter.com/the_breezyp" target="_blank" rel="noreferrer">
                     my twitter
                   </Button>{' '}
