@@ -201,9 +201,9 @@ export default function PublicBanlistSemiLimited() {
                       .filter(
                         (card) =>
                           (card.type === "XYZ Monster" &&
-                            card.banlist_info.ban_tcg === "Limited") ||
+                            card.banlist_info.ban_tcg === "Semi-Limited") ||
                           (card.type === "XYZ Pendulum Effect Monster" &&
-                            card.banlist_info.ban_tcg === "Limited")
+                            card.banlist_info.ban_tcg === "Semi-Limited")
                       )
                       .map((card) => (
                         <XYZMonsters
