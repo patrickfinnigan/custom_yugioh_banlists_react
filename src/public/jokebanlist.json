@@ -8836,36 +8836,6 @@
       }]
     },
     {
-      "id": 3280747,
-      "name": "Sixth Sense",
-      "type": "Trap Card",
-      "desc": "Declare 2 numbers from 1 to 6, then your opponent rolls a six-sided die, and if the result is one of the numbers you declared, you draw that many cards. Otherwise, send a number of cards from the top of your Deck to the Graveyard equal to the result.",
-      "race": "Normal",
-      "card_sets": [{
-        "set_name": "Legendary Collection 4: Joey's World Mega Pack",
-        "set_code": "LCJW-EN273",
-        "set_rarity": "Common",
-        "set_rarity_code": "(C)",
-        "set_price": "11.44"
-      }],
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden"
-      },
-      "card_images": [{
-        "id": 3280747,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/3280747.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/3280747.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "8.38",
-        "tcgplayer_price": "7.36",
-        "ebay_price": "9.95",
-        "amazon_price": "12.46",
-        "coolstuffinc_price": "7.99"
-      }]
-    },
-    {
       "id": 82732705,
       "name": "Skill Drain",
       "type": "Trap Card",
@@ -11812,8 +11782,8 @@
       "desc": "Each player can only control 1 monster of each Type. If a player controls 2 or more monsters of the same Type, they must send some to the GY so they control no more than 1 monster of that Type.",
       "race": "Continuous",
       "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden",
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
         "ban_tcg_reason": "Get it? ONLY one?",
         "ban_ocg_reason": "Get it? ONLY one?"
       },
@@ -11957,6 +11927,28 @@
         "id": 8124921,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/8124921.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/8124921.jpg"
+      }]
+    },
+    {
+      "id": 29692206,
+      "name": "Twin Long Rods #2",
+      "type": "Normal Monster",
+      "desc": "An amphibious creature with two whip-like tails.",
+      "atk": 850,
+      "def": 700,
+      "level": 3,
+      "race": "Aqua",
+      "attribute": "WATER",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "fucking ugly little freak bastard",
+        "ban_ocg_reason": "fucking ugly little freak bastard"
+      },
+      "card_images": [{
+        "id": 29692206,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/29692206.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/29692206.jpg"
       }]
     }
   ]
