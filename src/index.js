@@ -27,7 +27,8 @@ ReactDOM.render(
       <Route path="/joke-banlist" component={JokeBanlistView} />
       <Route path="/test-page" component={TestView} />
       <Route path="/contact" component={ContactTemp} />
-      <Route path="/" component={PublicBanlistView} />
+      <Route path="/" component={JokeBanlistView} />
+      {/* <Route path="/" component={PublicBanlistView} /> */}
     </Switch>
   </Router>,
   document.getElementById("root")
