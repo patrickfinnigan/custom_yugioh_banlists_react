@@ -10883,30 +10883,6 @@
       }]
     },
     {
-      "id": 83190280,
-      "name": "Lunalight Tiger",
-      "type": "Pendulum Effect Monster",
-      "desc": "[ Pendulum Effect ]\r\nOnce per turn: You can target 1 \"Lunalight\" monster in your Graveyard; Special Summon it, but it cannot attack, its effects are negated, also it is destroyed during the End Phase.\r\n----------------------------------------\r\n[ Monster Effect ]\r\nIf this card on the field is destroyed by battle or card effect: You can target 1 \"Lunalight\" monster in your Graveyard; Special Summon it. You can only use this effect of \"Lunalight Tiger\" once per turn.",
-      "atk": 1200,
-      "def": 800,
-      "level": 3,
-      "race": "Beast-Warrior",
-      "attribute": "LIGHT",
-      "archetype": "Lunalight",
-      "scale": 5,
-      "banlist_info": {
-        "ban_tcg": "Limited",
-        "ban_ocg": "Limited",
-        "ban_tcg_reason": "an olive branch to the Furry Community",
-        "ban_ocg_reason": "an olive branch to the Furry Community"
-      },
-      "card_images": [{
-        "id": 83190280,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/83190280.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/83190280.jpg"
-      }]
-    },
-    {
       "id": 59934749,
       "name": "Isolde, Two Tales of the Noble Knights",
       "type": "Link Monster",
@@ -11166,8 +11142,8 @@
       "banlist_info": {
         "ban_tcg": "Unlimited",
         "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "Reparations to the United Furry Federation (UFF)",
-        "ban_ocg_reason": "Reparations to the United Furry Federation (UFF)"
+        "ban_tcg_reason": "Greater Reparations to the United Furry Federation (UFF)",
+        "ban_ocg_reason": "Greater Reparations to the United Furry Federation (UFF)"
       },
       "card_images": [{
         "id": 83190280,
