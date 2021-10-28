@@ -608,64 +608,6 @@
       }]
     },
     {
-      "id": 24224830,
-      "name": "Called by the Grave",
-      "type": "Spell Card",
-      "desc": "Target 1 monster in your opponent's GY; banish it, and if you do, until the end of the next turn, its effects are negated, as well as the activated effects and effects on the field of monsters with the same original name.",
-      "race": "Quick-Play",
-      "card_sets": [{
-          "set_name": "2019 Gold Sarcophagus Tin Mega Pack",
-          "set_code": "MP19-EN043",
-          "set_rarity": "Prismatic Secret Rare",
-          "set_rarity_code": "(PScR)",
-          "set_price": "10.46"
-        },
-        {
-          "set_name": "Duel Devastator",
-          "set_code": "DUDE-EN044",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "3.84"
-        },
-        {
-          "set_name": "Extreme Force Special Edition",
-          "set_code": "EXFO-ENSE2",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "5.93"
-        },
-        {
-          "set_name": "Flames of Destruction",
-          "set_code": "FLOD-EN065",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "3.78"
-        },
-        {
-          "set_name": "Maximum Gold",
-          "set_code": "MAGO-EN156",
-          "set_rarity": "Rare",
-          "set_rarity_code": "(R)",
-          "set_price": "3.98"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Limited"
-      },
-      "card_images": [{
-        "id": 24224830,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24224830.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24224830.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "1.73",
-        "tcgplayer_price": "2.07",
-        "ebay_price": "3.99",
-        "amazon_price": "3.79",
-        "coolstuffinc_price": "3.99"
-      }]
-    },
-    {
       "id": 72892473,
       "name": "Card Destruction",
       "type": "Spell Card",
@@ -4296,94 +4238,6 @@
       }]
     },
     {
-      "id": 61740673,
-      "name": "Imperial Order",
-      "type": "Trap Card",
-      "desc": "Negate all Spell effects on the field. Once per turn, during the Standby Phase, you must pay 700 LP (this is not optional), or this card is destroyed.",
-      "race": "Continuous",
-      "card_sets": [{
-          "set_name": "Dark Beginning 1",
-          "set_code": "DB1-EN086",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "11.96"
-        },
-        {
-          "set_name": "Duelist Saga",
-          "set_code": "DUSA-EN049",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "11.1"
-        },
-        {
-          "set_name": "Legendary Collection 3: Yugi's World Mega Pack",
-          "set_code": "LCYW-EN178",
-          "set_rarity": "Secret Rare",
-          "set_rarity_code": "(ScR)",
-          "set_price": "21.12"
-        },
-        {
-          "set_name": "OTS Tournament Pack 9",
-          "set_code": "OP09-EN023",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "2.78"
-        },
-        {
-          "set_name": "OTS Tournament Pack 9 (POR)",
-          "set_code": "OP09-PT023",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "0.00"
-        },
-        {
-          "set_name": "Pharaoh's Servant",
-          "set_code": "PSV-104",
-          "set_rarity": "Secret Rare",
-          "set_rarity_code": "(ScR)",
-          "set_price": "13.3"
-        },
-        {
-          "set_name": "Pharaoh's Servant",
-          "set_code": "PSV-E104",
-          "set_rarity": "Secret Rare",
-          "set_rarity_code": "(ScR)",
-          "set_price": "58.07"
-        },
-        {
-          "set_name": "Pharaoh's Servant",
-          "set_code": "PSV-EN104",
-          "set_rarity": "Secret Rare",
-          "set_rarity_code": "(ScR)",
-          "set_price": "34.07"
-        },
-        {
-          "set_name": "Structure Deck: Rokket Revolt",
-          "set_code": "SDRR-EN040",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "2.7"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Limited",
-        "ban_ocg": "Limited",
-        "ban_goat": "Forbidden"
-      },
-      "card_images": [{
-        "id": 61740673,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/61740673.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/61740673.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "0.88",
-        "tcgplayer_price": "1.38",
-        "ebay_price": "1.25",
-        "amazon_price": "1.35",
-        "coolstuffinc_price": "2.99"
-      }]
-    },
-    {
       "id": 99177923,
       "name": "Infernity Archfiend",
       "type": "Effect Monster",
@@ -5331,41 +5185,6 @@
       }]
     },
     {
-      "id": 83190280,
-      "name": "Lunalight Tiger",
-      "type": "Pendulum Effect Monster",
-      "desc": "[ Pendulum Effect ]\r\nOnce per turn: You can target 1 \"Lunalight\" monster in your Graveyard; Special Summon it, but it cannot attack, its effects are negated, also it is destroyed during the End Phase.\r\n----------------------------------------\r\n[ Monster Effect ]\r\nIf this card on the field is destroyed by battle or card effect: You can target 1 \"Lunalight\" monster in your Graveyard; Special Summon it. You can only use this effect of \"Lunalight Tiger\" once per turn.",
-      "atk": 1200,
-      "def": 800,
-      "level": 3,
-      "race": "Beast-Warrior",
-      "attribute": "LIGHT",
-      "archetype": "Lunalight",
-      "scale": 5,
-      "card_sets": [{
-        "set_name": "Shining Victories",
-        "set_code": "SHVI-EN013",
-        "set_rarity": "Common",
-        "set_rarity_code": "(C)",
-        "set_price": "1.47"
-      }],
-      "banlist_info": {
-        "ban_tcg": "Forbidden"
-      },
-      "card_images": [{
-        "id": 83190280,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/83190280.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/83190280.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "0.62",
-        "tcgplayer_price": "0.45",
-        "ebay_price": "0.99",
-        "amazon_price": "0.87",
-        "coolstuffinc_price": "0.49"
-      }]
-    },
-    {
       "id": 4423206,
       "name": "M-X-Saber Invoker",
       "type": "XYZ Monster",
@@ -5526,43 +5345,6 @@
       }]
     },
     {
-      "id": 71650854,
-      "name": "Magical Mid-Breaker Field",
-      "type": "Spell Card",
-      "desc": "Activate this card at the start of your Main Phase 1 or 2. During each player's Main Phase 1, monsters on the field cannot be destroyed by their opponent's card effects, also neither player can target monsters their opponent controls. You cannot activate or Set Field Spell Cards.",
-      "race": "Field",
-      "card_sets": [{
-          "set_name": "2017 Mega-Tin Mega Pack",
-          "set_code": "MP17-EN106",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "1.88"
-        },
-        {
-          "set_name": "The Dark Illusion",
-          "set_code": "TDIL-EN067",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "1.34"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Limited"
-      },
-      "card_images": [{
-        "id": 71650854,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/71650854.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/71650854.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "0.15",
-        "tcgplayer_price": "0.44",
-        "ebay_price": "2.00",
-        "amazon_price": "0.49",
-        "coolstuffinc_price": "0.49"
-      }]
-    },
-    {
       "id": 34206604,
       "name": "Magical Scientist",
       "type": "Effect Monster",
@@ -5719,75 +5501,6 @@
         "ebay_price": "29.99",
         "amazon_price": "34.95",
         "coolstuffinc_price": "35.99"
-      }]
-    },
-    {
-      "id": 23434538,
-      "name": "Maxx \"C\"",
-      "type": "Effect Monster",
-      "desc": "During either player's turn: You can send this card from your hand to the Graveyard; this turn, each time your opponent Special Summons a monster(s), immediately draw 1 card. You can only use 1 \"Maxx \"C\"\" per turn.",
-      "atk": 500,
-      "def": 200,
-      "level": 2,
-      "race": "Insect",
-      "attribute": "EARTH",
-      "card_sets": [{
-          "set_name": "Astral Pack Four",
-          "set_code": "AP04-EN002",
-          "set_rarity": "Ultimate Rare",
-          "set_rarity_code": "(UtR)",
-          "set_price": "669.67"
-        },
-        {
-          "set_name": "Collectible Tins 2012 Wave 2",
-          "set_code": "CT09-EN012",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "23.53"
-        },
-        {
-          "set_name": "Legendary Collection 5D's Mega Pack",
-          "set_code": "LC5D-EN227",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "40.03"
-        },
-        {
-          "set_name": "Machine Reactor Structure Deck",
-          "set_code": "SR03-EN020",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "19.79"
-        },
-        {
-          "set_name": "Premium Gold: Infinite Gold",
-          "set_code": "PGL3-EN042",
-          "set_rarity": "Gold Rare",
-          "set_rarity_code": "(GUR)",
-          "set_price": "21.69"
-        },
-        {
-          "set_name": "Storm of Ragnarok",
-          "set_code": "STOR-EN086",
-          "set_rarity": "Secret Rare",
-          "set_rarity_code": "(ScR)",
-          "set_price": "124.61"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Forbidden"
-      },
-      "card_images": [{
-        "id": 23434538,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/23434538.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/23434538.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "7.58",
-        "tcgplayer_price": "11.75",
-        "ebay_price": "13.95",
-        "amazon_price": "19.73",
-        "coolstuffinc_price": "31.99"
       }]
     },
     {
@@ -6997,56 +6710,6 @@
         "tcgplayer_price": "1.52",
         "ebay_price": "4.00",
         "amazon_price": "3.59",
-        "coolstuffinc_price": "3.99"
-      }]
-    },
-    {
-      "id": 57835716,
-      "name": "Orcust Harp Horror",
-      "type": "Effect Monster",
-      "desc": "You can banish this card from your GY; Special Summon 1 \"Orcust\" monster from your Deck, except \"Orcust Harp Horror\", also you cannot Special Summon monsters for the rest of this turn, except DARK monsters. You can only use this effect of \"Orcust Harp Horror\" once per turn.",
-      "atk": 1700,
-      "def": 1400,
-      "level": 4,
-      "race": "Machine",
-      "attribute": "DARK",
-      "archetype": "Orcust",
-      "card_sets": [{
-          "set_name": "OTS Tournament Pack 11",
-          "set_code": "OP11-EN007",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "7.08"
-        },
-        {
-          "set_name": "OTS Tournament Pack 11 (POR)",
-          "set_code": "OP11-PT007",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "0.00"
-        },
-        {
-          "set_name": "Soul Fusion",
-          "set_code": "SOFU-EN016",
-          "set_rarity": "Rare",
-          "set_rarity_code": "(R)",
-          "set_price": "1.34"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Limited"
-      },
-      "card_images": [{
-        "id": 57835716,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/57835716.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/57835716.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "0.23",
-        "tcgplayer_price": "0.45",
-        "ebay_price": "4.95",
-        "amazon_price": "2.20",
         "coolstuffinc_price": "3.99"
       }]
     },
@@ -8785,57 +8448,6 @@
         "ebay_price": "9.99",
         "amazon_price": "0.93",
         "coolstuffinc_price": "499.99"
-      }]
-    },
-    {
-      "id": 24940422,
-      "name": "Sekka's Light",
-      "type": "Spell Card",
-      "desc": "If you have no Spells/Traps in your GY: Draw 2 cards, also, for the rest of this Duel after you activate this card, you cannot activate Spell/Trap Cards or effects, except \"Sekka's Light\". You can banish this card from your GY; reveal 1 monster in your hand, shuffle it into the Deck, then, draw 1 card. You can only use each effect of \"Sekka's Light\" once per turn.",
-      "race": "Normal",
-      "card_sets": [{
-          "set_name": "2019 Gold Sarcophagus Tin Mega Pack",
-          "set_code": "MP19-EN041",
-          "set_rarity": "Prismatic Secret Rare",
-          "set_rarity_code": "(PScR)",
-          "set_price": "1.94"
-        },
-        {
-          "set_name": "Flames of Destruction",
-          "set_code": "FLOD-EN062",
-          "set_rarity": "Rare",
-          "set_rarity_code": "(R)",
-          "set_price": "1.05"
-        },
-        {
-          "set_name": "OTS Tournament Pack 9",
-          "set_code": "OP09-EN011",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "1.42"
-        },
-        {
-          "set_name": "OTS Tournament Pack 9 (POR)",
-          "set_code": "OP09-PT011",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "0.00"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Limited"
-      },
-      "card_images": [{
-        "id": 24940422,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24940422.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24940422.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "0.09",
-        "tcgplayer_price": "0.23",
-        "ebay_price": "0.99",
-        "amazon_price": "1.89",
-        "coolstuffinc_price": "0.99"
       }]
     },
     {
@@ -11049,107 +10661,6 @@
       }]
     },
     {
-      "id": 70368879,
-      "name": "Upstart Goblin",
-      "type": "Spell Card",
-      "desc": "Draw 1 card, then your opponent gains 1000 LP.",
-      "race": "Normal",
-      "card_sets": [{
-          "set_name": "Dark Beginning 1",
-          "set_code": "DB1-EN018",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "3.89"
-        },
-        {
-          "set_name": "Dark Legends",
-          "set_code": "DLG1-EN057",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "3.89"
-        },
-        {
-          "set_name": "Demo Pack",
-          "set_code": "DEM1-EN014",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "3.25"
-        },
-        {
-          "set_name": "Legendary Collection 3: Yugi's World Mega Pack",
-          "set_code": "LCYW-EN265",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "9.71"
-        },
-        {
-          "set_name": "Magic Ruler",
-          "set_code": "MRL-033",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "3.2"
-        },
-        {
-          "set_name": "Magic Ruler",
-          "set_code": "MRL-E033",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "11.24"
-        },
-        {
-          "set_name": "Retro Pack",
-          "set_code": "RP01-EN056",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "5.7"
-        },
-        {
-          "set_name": "Secret Slayers",
-          "set_code": "SESL-EN043",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "4.03"
-        },
-        {
-          "set_name": "Spell Ruler",
-          "set_code": "SRL-033",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "4.19"
-        },
-        {
-          "set_name": "Spell Ruler",
-          "set_code": "SRL-EN033",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "3.19"
-        },
-        {
-          "set_name": "Turbo Pack: Booster Eight",
-          "set_code": "TU08-EN004",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "95.94"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Limited",
-        "ban_goat": "Semi-Limited"
-      },
-      "card_images": [{
-        "id": 70368879,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/70368879.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/70368879.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "1.91",
-        "tcgplayer_price": "2.22",
-        "ebay_price": "4.35",
-        "amazon_price": "4.98",
-        "coolstuffinc_price": "2.99"
-      }]
-    },
-    {
       "id": 5851097,
       "name": "Vanity's Emptiness",
       "type": "Trap Card",
@@ -11616,48 +11127,7 @@
 
 
 
-    {
-      "id": 3580032,
-      "name": "Merlin",
-      "type": "Effect Monster",
-      "desc": "You can only use each effect of \"Merlin\" once per turn.\n● You can Tribute this card; Special Summon 1 \"Noble Knight\" monster from your Deck. You cannot Special Summon monsters the turn you activate this effect, except \"Noble Knight\" monsters.\n● (Quick Effect): You can banish this card from your GY; immediately after this effect resolves, Synchro Summon 1 \"Noble Knight\" Synchro Monster using monsters you control.\n● (Quick Effect): You can banish this card from your GY; immediately after this effect resolves, Xyz Summon 1 \"Noble Knight\" Xyz Monster using monsters you control.",
-      "atk": 1400,
-      "def": 500,
-      "level": 3,
-      "race": "Spellcaster",
-      "attribute": "DARK",
-      "archetype": "Noble Knight",
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "You Know Why",
-        "ban_ocg_reason": "You Know Why"
-      },
-      "card_images": [{
-        "id": 3580032,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/3580032.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/3580032.jpg"
-      }]
-    },
-    {
-      "id": 84211599,
-      "name": "Pot of Prosperity",
-      "type": "Spell Card",
-      "desc": "Banish 3 or 6 cards of your choice from your Extra Deck, face-down; for the rest of this turn after this card resolves, any damage your opponent takes is halved, also excavate cards from the top of your Deck equal to the number of cards banished, add 1 excavated card to your hand, place the rest on the bottom of your Deck in any order. You can only activate 1 \"Pot of Prosperity\" per turn. You cannot draw cards by card effects the turn you activate this card.",
-      "race": "Normal",
-      "archetype": "Greed",
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Limited",
-        "ban_tcg_reason": "Market Inaccessibility",
-        "ban_ocg_reason": "Market Inaccessibility"
-      },
-      "card_images": [{
-        "id": 84211599,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/84211599.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/84211599.jpg"
-      }]
-    },
+
     {
       "id": 37818794,
       "name": "Red-Eyes Dark Dragoon",
@@ -11672,86 +11142,13 @@
       "banlist_info": {
         "ban_tcg": "Forbidden",
         "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "Too easy to play compared to power level",
-        "ban_ocg_reason": "Too easy to play compared to power level"
+        "ban_tcg_reason": "Too easy to splash compared to power level",
+        "ban_ocg_reason": "Too easy to splash compared to power level"
       },
       "card_images": [{
         "id": 37818794,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/37818794.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/37818794.jpg"
-      }]
-    },
-    {
-      "id": 86066372,
-      "name": "Accesscode Talker",
-      "type": "Link Monster",
-      "desc": "2+ Effect Monsters\r\nYour opponent cannot activate cards or effects in response to this card's effect activations. If this card is Link Summoned: You can target 1 Link Monster that was used as material for its Link Summon; this card gains ATK equal to that monster's Link Rating x 1000. You can banish 1 Link Monster from your field or GY; destroy 1 card your opponent controls, also for the rest of this turn, you cannot banish monsters with that same Attribute to activate this effect of \"Accesscode Talker\".",
-      "atk": 2300,
-      "race": "Cyberse",
-      "attribute": "DARK",
-      "archetype": "Code Talker",
-      "linkval": 4,
-      "linkmarkers": [
-        "Top",
-        "Left",
-        "Bottom",
-        "Right"
-      ],
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "Market Inaccessibility",
-        "ban_ocg_reason": "Market Inaccessibility"
-      },
-      "card_images": [{
-        "id": 86066372,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/86066372.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/86066372.jpg"
-      }]
-    },
-    {
-      "id": 49202162,
-      "name": "Black Luster Soldier - Soldier of Chaos",
-      "type": "Link Monster",
-      "desc": "3 monsters with different names\r\nIf this card was Link Summoned using a Level 7 or higher monster(s) as material, your opponent cannot target it with card effects, also it cannot be destroyed by your opponent's card effects. When this card destroys an opponent's monster by battle: You can activate 1 of these effects;\r\n● This card gains 1500 ATK.\r\n● This card can make a second attack during the Battle Phase of your next turn.\r\n● Banish 1 card on the field.",
-      "atk": 3000,
-      "race": "Warrior",
-      "attribute": "EARTH",
-      "archetype": "Black Luster Soldier",
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "Market Inaccessibility",
-        "ban_ocg_reason": "Market Inaccessibility"
-      },
-      "linkval": 3,
-      "linkmarkers": [
-        "Top",
-        "Bottom-Left",
-        "Bottom-Right"
-      ],
-      "card_images": [{
-        "id": 49202162,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/49202162.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/49202162.jpg"
-      }]
-    },
-    {
-      "id": 65681983,
-      "name": "Crossout Designator",
-      "type": "Spell Card",
-      "desc": "Declare 1 card name; banish 1 card with that name from your Deck, and if you do, until the end of this turn, its effects are negated, as well as the activated effects and effects on the field of cards with the same original name. You can only activate 1 \"Crossout Designator\" per turn.",
-      "race": "Quick-Play",
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "Market Inaccessibility",
-        "ban_ocg_reason": "Market Inaccessibility"
-      },
-      "card_images": [{
-        "id": 65681983,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/65681983.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/65681983.jpg"
       }]
     },
     {
@@ -11781,8 +11178,8 @@
       "race": "Field",
       "archetype": "Invoked",
       "banlist_info": {
-        "ban_tcg": "Semi-Limited",
-        "ban_ocg": "Semi-Limited",
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
         "ban_tcg_reason": "Consistency Reduction",
         "ban_ocg_reason": "Consistency Reduction"
       },
@@ -11803,10 +11200,10 @@
       "race": "Zombie",
       "attribute": "FIRE",
       "banlist_info": {
-        "ban_tcg": "Limited",
-        "ban_ocg": "Limited",
-        "ban_tcg_reason": "Experimentation",
-        "ban_ocg_reason": "Experimentation"
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Reducing Turn-Ending Handtraps",
+        "ban_ocg_reason": "Reducing Turn-Ending Handtraps"
       },
       "card_images": [{
           "id": 14558127,
@@ -11829,31 +11226,13 @@
       "banlist_info": {
         "ban_tcg": "Unlimited",
         "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "Promotes Creative Deckbuilding",
-        "ban_ocg_reason": "Promotes Creative Deckbuilding"
+        "ban_tcg_reason": "Boost to Monster Mash decks",
+        "ban_ocg_reason": "Boost to Monster Mash decks"
       },
       "card_images": [{
         "id": 24940422,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24940422.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24940422.jpg"
-      }]
-    },
-    {
-      "id": 11110587,
-      "name": "That Grass Looks Greener",
-      "type": "Spell Card",
-      "desc": "If you have more cards in your Deck than your opponent does: Send cards from the top of your Deck to the Graveyard so you have the same number of cards in the Deck as your opponent.",
-      "race": "Normal",
-      "banlist_info": {
-        "ban_tcg": "Unlimited",
-        "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "Promotes Creative Deckbuilding",
-        "ban_ocg_reason": "Promotes Creative Deckbuilding"
-      },
-      "card_images": [{
-        "id": 11110587,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/11110587.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/11110587.jpg"
       }]
     },
     {
@@ -11865,36 +11244,13 @@
       "banlist_info": {
         "ban_tcg": "Unlimited",
         "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "No Corporate Oversight",
-        "ban_ocg_reason": "No Corporate Oversight"
+        "ban_tcg_reason": "Since Crossout is Out",
+        "ban_ocg_reason": "Since Crossout is Out"
       },
       "card_images": [{
         "id": 24224830,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24224830.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24224830.jpg"
-      }]
-    },
-    {
-      "id": 82385847,
-      "name": "Dinowrestler Pankratops",
-      "type": "Effect Monster",
-      "desc": "If your opponent controls more monsters than you do, you can Special Summon this card (from your hand). You can only Special Summon \"Dinowrestler Pankratops\" once per turn this way. (Quick Effect): You can Tribute 1 \"Dinowrestler\" monster, then target 1 card your opponent controls; destroy it. You can only use this effect of \"Dinowrestler Pankratops\" once per turn.",
-      "atk": 2600,
-      "def": 0,
-      "level": 7,
-      "race": "Dinosaur",
-      "attribute": "EARTH",
-      "archetype": "Dinowrestler",
-      "banlist_info": {
-        "ban_tcg": "Semi-Limited",
-        "ban_ocg": "Semi-Limited",
-        "ban_tcg_reason": "Experimentation",
-        "ban_ocg_reason": "Experimentation"
-      },
-      "card_images": [{
-        "id": 82385847,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/82385847.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/82385847.jpg"
       }]
     },
     {
@@ -11906,8 +11262,8 @@
       "banlist_info": {
         "ban_tcg": "Unlimited",
         "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "Experimentation",
-        "ban_ocg_reason": "Experimentation"
+        "ban_tcg_reason": "Countering powerful field spells",
+        "ban_ocg_reason": "Countering powerful field spells"
       },
       "card_images": [{
         "id": 71650854,
@@ -11924,13 +11280,188 @@
       "banlist_info": {
         "ban_tcg": "Banned",
         "ban_ocg": "Banned",
-        "ban_tcg_reason": "Unfair Gamestate",
-        "ban_ocg_reason": "Unfair Gamestate"
+        "ban_tcg_reason": "Reducing challenging floodgates",
+        "ban_ocg_reason": "Reducing challenging floodgates"
       },
       "card_images": [{
         "id": 76375976,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/76375976.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/76375976.jpg"
+      }]
+    },
+    {
+      "id": 70368879,
+      "name": "Upstart Goblin",
+      "type": "Spell Card",
+      "desc": "Draw 1 card, then your opponent gains 1000 LP.",
+      "race": "Normal",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "Draw power isn't very important",
+        "ban_ocg_reason": "Draw power isn't very important"
+      },
+      "card_images": [{
+        "id": 70368879,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/70368879.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/70368879.jpg"
+      }]
+    },
+    {
+      "id": 38814750,
+      "name": "PSY-Framegear Gamma",
+      "type": "Tuner Monster",
+      "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned by a card effect. When your opponent activates a monster effect while you control no monsters (Quick Effect): You can Special Summon both this card from your hand and 1 \"PSY-Frame Driver\" from your hand, Deck, or GY, and if you do, negate that activation, and if you do that, destroy that monster. During the End Phase, banish the face-up monsters Special Summoned by this effect.",
+      "atk": 1000,
+      "def": 0,
+      "level": 2,
+      "race": "Psychic",
+      "attribute": "LIGHT",
+      "archetype": "PSY-Frame",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Reducing Turn-Ending Handtraps",
+        "ban_ocg_reason": "Reducing Turn-Ending Handtraps"
+      },
+      "card_images": [{
+        "id": 38814750,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/38814750.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/38814750.jpg"
+      }]
+    },
+    {
+      "id": 94145022,
+      "name": "Droll & Lock Bird",
+      "type": "Effect Monster",
+      "desc": "If a card(s) is added from the Main Deck to your opponent's hand, except during the Draw Phase (Quick Effect): You can send this card from your hand to the GY; for the rest of this turn, cards cannot be added from either player's Main Deck to the hand.",
+      "atk": 0,
+      "def": 0,
+      "level": 1,
+      "race": "Spellcaster",
+      "attribute": "WIND",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Reducing Turn-Ending Handtraps",
+        "ban_ocg_reason": "Reducing Turn-Ending Handtraps"
+      },
+      "card_images": [{
+          "id": 94145022,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/94145022.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/94145022.jpg"
+        },
+        {
+          "id": 94145021,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/94145021.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/94145021.jpg"
+        }
+      ]
+    },
+    {
+      "id": 24299458,
+      "name": "Forbidden Droplet",
+      "type": "Spell Card",
+      "desc": "Send any number of other cards from your hand and/or field to the GY; choose that many Effect Monsters your opponent controls, and until the end of this turn, their ATK is halved, also their effects are negated. In response to this card's activation, your opponent cannot activate cards, or the effects of cards, with the same original type (Monster/Spell/Trap) as the cards sent to the GY to activate this card. You can only activate 1 \"Forbidden Droplet\" per turn.",
+      "race": "Quick-Play",
+      "archetype": "Forbidden",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Reducing Turn-Ending Handtraps",
+        "ban_ocg_reason": "Reducing Turn-Ending Handtraps"
+      },
+      "card_images": [{
+        "id": 24299458,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24299458.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24299458.jpg"
+      }]
+    },
+    {
+      "id": 61740673,
+      "name": "Imperial Order",
+      "type": "Trap Card",
+      "desc": "Negate all Spell effects on the field. Once per turn, during the Standby Phase, you must pay 700 LP (this is not optional), or this card is destroyed.",
+      "race": "Continuous",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Reducing challenging floodgates",
+        "ban_ocg_reason": "Reducing challenging floodgates"
+      },
+      "card_images": [{
+        "id": 61740673,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/61740673.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/61740673.jpg"
+      }]
+    },
+    {
+      "id": 57835716,
+      "name": "Orcust Harp Horror",
+      "type": "Effect Monster",
+      "desc": "You can banish this card from your GY; Special Summon 1 \"Orcust\" monster from your Deck, except \"Orcust Harp Horror\", also you cannot Special Summon monsters for the rest of this turn, except DARK monsters. You can only use this effect of \"Orcust Harp Horror\" once per turn.",
+      "atk": 1700,
+      "def": 1400,
+      "level": 4,
+      "race": "Machine",
+      "attribute": "DARK",
+      "archetype": "Orcust",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Boost to the Orcust Deck",
+        "ban_ocg_reason": "Boost to the Orcust Deck"
+      },
+      "card_images": [{
+        "id": 57835716,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/57835716.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/57835716.jpg"
+      }]
+    },
+    {
+      "id": 83190280,
+      "name": "Lunalight Tiger",
+      "type": "Pendulum Effect Monster",
+      "desc": "[ Pendulum Effect ]\r\nOnce per turn: You can target 1 \"Lunalight\" monster in your Graveyard; Special Summon it, but it cannot attack, its effects are negated, also it is destroyed during the End Phase.\r\n----------------------------------------\r\n[ Monster Effect ]\r\nIf this card on the field is destroyed by battle or card effect: You can target 1 \"Lunalight\" monster in your Graveyard; Special Summon it. You can only use this effect of \"Lunalight Tiger\" once per turn.",
+      "atk": 1200,
+      "def": 800,
+      "level": 3,
+      "race": "Beast-Warrior",
+      "attribute": "LIGHT",
+      "archetype": "Lunalight",
+      "scale": 5,
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "No longer a meta threat",
+        "ban_ocg_reason": "No longer a meta threat"
+      },
+      "card_images": [{
+        "id": 83190280,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/83190280.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/83190280.jpg"
+      }]
+    },
+    {
+      "id": 23434538,
+      "name": "Maxx \"C\"",
+      "type": "Effect Monster",
+      "desc": "During either player's turn: You can send this card from your hand to the Graveyard; this turn, each time your opponent Special Summons a monster(s), immediately draw 1 card. You can only use 1 \"Maxx \"C\"\" per turn.",
+      "atk": 500,
+      "def": 200,
+      "level": 2,
+      "race": "Insect",
+      "attribute": "EARTH",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "Reduce speed of current game",
+        "ban_ocg_reason": "Reduce speed of current game"
+      },
+      "card_images": [{
+        "id": 23434538,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/23434538.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/23434538.jpg"
       }]
     }
   ]

@@ -2,10 +2,10 @@ export default function BudgetBanlistLable() {
   return (
     <thead>
       <tr className={["banlist_label"]}>
-        <th>Card Type</th>
-        <th>Card Name</th>
-        <th>Budget Format</th>
-        <th>Min Price</th>
+        <th className={["label_card_type"]}>Card Type</th>
+        <th className={["label_card_name"]}>Card Name</th>
+        <th className={["label_budget_format"]}>Budget Format</th>
+        <th className={["label_min_price"]}>Min Price</th>
       </tr>
     </thead>
   );

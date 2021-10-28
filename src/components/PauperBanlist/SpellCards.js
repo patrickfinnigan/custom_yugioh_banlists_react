@@ -7,14 +7,14 @@ export default function SpellCards({
 }) {
   return (
     <tr className={["spell_card"]}>
-      <th className={["normal-weight-text"]}>{type}</th>
-      <th className={["normal-weight-text"]}>
+      <th className={["normal-weight-text type"]}>{type}</th>
+      <th className={["normal-weight-text name"]}>
         <a href={href} target="_blank" rel="noreferrer">
           {name}
         </a>
       </th>
-      <th className={["normal-weight-text"]}>{status}</th>
-      <th className={["normal-weight-text"]}>{rarity}</th>
+      <th className={["normal-weight-text status"]}>{status}</th>
+      <th className={["normal-weight-text rarity"]}>{rarity}</th>
     </tr>
   );
 }

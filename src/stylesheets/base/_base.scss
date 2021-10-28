@@ -27,6 +27,24 @@ html {
 a {
   // color: $brand-color;
   text-decoration: none;
-
 }
 
+/* Screen Font Resize Setting */
+@media screen and (min-width: 768px) {
+  th {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  th {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .card-body {
+    padding: 0.5rem 0.25rem;
+  }
+}

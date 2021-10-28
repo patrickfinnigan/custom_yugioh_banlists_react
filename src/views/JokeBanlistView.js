@@ -18,7 +18,7 @@ export default function JokeBanlistView() {
         <MainNavBar />
       </header>
       <br />
-      <Container>
+      <Container fluid="sm">
         <Row>
           <Col>
             {/* <SearchBox /> */}

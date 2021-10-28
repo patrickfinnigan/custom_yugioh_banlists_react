@@ -1,11 +1,11 @@
-export default function CustomBanlistLable() {
+export default function PublicBanlistLable() {
   return (
     <thead>
       <tr className={["banlist_label"]}>
-        <th>Card Type</th>
-        <th>Card Name</th>
-        <th>Pauper Format</th>
-        <th>Reason</th>
+        <th className={["label_card_type"]}>Card Type</th>
+        <th className={["label_card_name"]}>Card Name</th>
+        <th className={["label_standing"]}>Standing</th>
+        <th className={["label_reason"]}>Reason</th>
       </tr>
     </thead>
   );

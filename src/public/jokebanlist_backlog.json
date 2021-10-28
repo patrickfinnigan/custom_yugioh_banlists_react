@@ -1,179 +1,69 @@
 {
   "data": [{
-      "id": 59057152,
-      "name": "Noble Knight Medraut",
-      "type": "Effect Monster",
-      "desc": "This card is treated as a Normal Monster while face-up on the field. While equipped with a \"Noble Arms\" Equip Spell, this card becomes an Effect Monster with this effect.\n● This card becomes DARK and its Level is increased by 1. Once per turn, if you control no other monsters: You can Special Summon 1 \"Noble Knight\" monster from your Deck in Defense Position, except \"Noble Knight Medraut\", and if you do, destroy 1 Equip Spell you control.",
-      "atk": 1700,
-      "def": 1000,
-      "level": 4,
-      "race": "Warrior",
+      "id": 21200905,
+      "name": "Aromaseraphy Jasmine",
+      "type": "Link Monster",
+      "desc": "2 Plant monsters\r\nIf your LP are higher than your opponent's, this card and any Plant monsters it points to cannot be destroyed by battle. You can Tribute 1 monster this card points to; Special Summon 1 Plant monster from your Deck in Defense Position. You can only use this effect of \"Aromaseraphy Jasmine\" once per turn. Once per turn, if you gain LP: Add 1 Plant monster from your Deck to your hand.",
+      "atk": 1800,
+      "race": "Plant",
       "attribute": "LIGHT",
-      "archetype": "Noble Knight",
+      "archetype": "Aroma",
+      "linkval": 2,
+      "linkmarkers": [
+        "Bottom-Left",
+        "Bottom-Right"
+      ],
       "banlist_info": {
         "ban_tcg": "Forbidden",
         "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "degenerate combo starter",
-        "ban_ocg_reason": "degenerate combo starter"
+        "ban_tcg_reason": "Aroma this sack",
+        "ban_ocg_reason": "Aroma this sack"
       },
       "card_images": [{
-        "id": 59057152,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/59057152.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/59057152.jpg"
+        "id": 21200905,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/21200905.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/21200905.jpg"
       }]
     },
     {
-      "id": 24207889,
-      "name": "There Can Be Only One",
-      "type": "Trap Card",
-      "desc": "Each player can only control 1 monster of each Type. If a player controls 2 or more monsters of the same Type, they must send some to the GY so they control no more than 1 monster of that Type.",
-      "race": "Continuous",
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "Get it? ONLY one?",
-        "ban_ocg_reason": "Get it? ONLY one?"
-      },
-      "card_images": [{
-        "id": 24207889,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/24207889.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/24207889.jpg"
-      }]
-    },
-    {
-      "id": 90448279,
-      "name": "Divine Arsenal AA-ZEUS - Sky Thunder",
+      "id": 94380860,
+      "name": "Number 103: Ragnazero",
       "type": "XYZ Monster",
-      "desc": "2 Level 12 monsters\r\nOnce per turn, if an Xyz Monster battled this turn, you can also Xyz Summon \"Divine Arsenal AA-ZEUS - Sky Thunder\" by using 1 Xyz Monster you control as material. (Transfer its materials to this card.) (Quick Effect): You can detach 2 materials from this card; send all other cards from the field to the GY. Once per turn, if another card(s) you control is destroyed by battle or an opponent's card effect: You can attach 1 card from your hand, Deck, or Extra Deck to this card as material.",
-      "atk": 3000,
-      "def": 3000,
-      "level": 12,
-      "race": "Machine",
-      "attribute": "LIGHT",
+      "desc": "2 Level 4 monsters\nOnce per turn, during either player's turn: You can detach 1 Xyz Material from this card, then target 1 face-up Attack Position monster your opponent controls, whose current ATK is different from its original ATK; destroy it, and if you do, draw 1 card.",
+      "atk": 2400,
+      "def": 1200,
+      "level": 4,
+      "race": "Fairy",
+      "attribute": "WATER",
       "banlist_info": {
         "ban_tcg": "Forbidden",
         "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "False Advertising (Neither Divine Nor Thunder-type)",
-        "ban_ocg_reason": "False Advertising (Neither Divine Nor Thunder-type)"
+        "ban_tcg_reason": "Ragnazero tolerance for Gage",
+        "ban_ocg_reason": "Ragnazero tolerance for Gage"
       },
       "card_images": [{
-        "id": 90448279,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/90448279.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/90448279.jpg"
+        "id": 94380860,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/94380860.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/94380860.jpg"
       }]
     },
     {
-      "id": 33396948,
-      "name": "Exodia the Forbidden One",
-      "type": "Effect Monster",
-      "desc": "If you have \"Right Leg of the Forbidden One\", \"Left Leg of the Forbidden One\", \"Right Arm of the Forbidden One\" and \"Left Arm of the Forbidden One\" in addition to this card in your hand, you win the Duel.",
-      "atk": 1000,
-      "def": 1000,
-      "level": 3,
-      "race": "Spellcaster",
-      "attribute": "DARK",
-      "archetype": "Exodia",
+      "id": 22454453,
+      "name": "Jar of Generosity",
+      "type": "Trap Card",
+      "desc": "Place 1 card from your hand on either the top or bottom of the Deck.",
+      "race": "Normal",
+      "archetype": "Greed",
       "banlist_info": {
         "ban_tcg": "Forbidden",
         "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "has Forbidden in the name",
-        "ban_ocg_reason": "has Forbidden in the name"
+        "ban_tcg_reason": "Banned as part of Republican Austerity Measures",
+        "ban_ocg_reason": "Banned as part of Republican Austerity Measures"
       },
       "card_images": [{
-        "id": 33396948,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/33396948.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/33396948.jpg"
-      }]
-    }, {
-      "id": 7902349,
-      "name": "Left Arm of the Forbidden One",
-      "type": "Normal Monster",
-      "desc": "A forbidden left arm sealed by magic. Whosoever breaks this seal will know infinite power.",
-      "atk": 200,
-      "def": 300,
-      "level": 1,
-      "race": "Spellcaster",
-      "attribute": "DARK",
-      "archetype": "Exodia",
-      "banlist_info": {
-        "ban_tcg": "Unlimited",
-        "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "because im such a nice guy ;)",
-        "ban_ocg_reason": "because im such a nice guy ;)"
-      },
-      "card_images": [{
-        "id": 7902349,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/7902349.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/7902349.jpg"
-      }]
-    },
-    {
-      "id": 44519536,
-      "name": "Left Leg of the Forbidden One",
-      "type": "Normal Monster",
-      "desc": "A forbidden left leg sealed by magic. Whosoever breaks this seal will know infinite power.",
-      "atk": 200,
-      "def": 300,
-      "level": 1,
-      "race": "Spellcaster",
-      "attribute": "DARK",
-      "archetype": "Exodia",
-      "banlist_info": {
-        "ban_tcg": "Unlimited",
-        "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "because im such a nice guy ;)",
-        "ban_ocg_reason": "because im such a nice guy ;)"
-      },
-      "card_images": [{
-        "id": 44519536,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/44519536.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/44519536.jpg"
-      }]
-    },
-    {
-      "id": 70903634,
-      "name": "Right Arm of the Forbidden One",
-      "type": "Normal Monster",
-      "desc": "A forbidden right arm sealed by magic. Whosoever breaks this seal will know infinite power.",
-      "atk": 200,
-      "def": 300,
-      "level": 1,
-      "race": "Spellcaster",
-      "attribute": "DARK",
-      "archetype": "Exodia",
-      "banlist_info": {
-        "ban_tcg": "Unlimited",
-        "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "because im such a nice guy ;)",
-        "ban_ocg_reason": "because im such a nice guy ;)"
-      },
-      "card_images": [{
-        "id": 70903634,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/70903634.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/70903634.jpg"
-      }]
-    },
-    {
-      "id": 8124921,
-      "name": "Right Leg of the Forbidden One",
-      "type": "Normal Monster",
-      "desc": "A forbidden right leg sealed by magic. Whosoever breaks this seal will know infinite power.",
-      "atk": 200,
-      "def": 300,
-      "level": 1,
-      "race": "Spellcaster",
-      "attribute": "DARK",
-      "archetype": "Exodia",
-      "banlist_info": {
-        "ban_tcg": "Unlimited",
-        "ban_ocg": "Unlimited",
-        "ban_tcg_reason": "because im such a nice guy ;)",
-        "ban_ocg_reason": "because im such a nice guy ;)"
-      },
-      "card_images": [{
-        "id": 8124921,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/8124921.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/8124921.jpg"
+        "id": 22454453,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/22454453.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/22454453.jpg"
       }]
     }
   ]

@@ -1,11 +1,11 @@
-export default function JokeBanlistLable() {
+export default function PublicBanlistLable() {
   return (
     <thead>
       <tr className={["banlist_label"]}>
-        <th>Card Type</th>
-        <th>Card Name</th>
-        <th>Standing</th>
-        <th>Reason</th>
+        <th className={["label_card_type"]}>Card Type</th>
+        <th className={["label_card_name"]}>Card Name</th>
+        <th className={["label_standing"]}>Standing</th>
+        <th className={["label_reason"]}>Reason</th>
       </tr>
     </thead>
   );
