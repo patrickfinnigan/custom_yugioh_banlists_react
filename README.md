@@ -12,6 +12,7 @@
 
 ### To-Dos
 
+- Add Public Errata Section/Page for Public Banlist
 - Add JSON recognition of line breaks (n/, r/, etc)
 - Add search functionality with smooth-scroll to the card entry in the view
 - Add loading spinner

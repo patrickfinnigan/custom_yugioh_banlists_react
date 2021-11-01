@@ -10760,8 +10760,8 @@
       "banlist_info": {
         "ban_tcg": "Forbidden",
         "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "has Forbidden in the name",
-        "ban_ocg_reason": "has Forbidden in the name"
+        "ban_tcg_reason": "has Forbidden in the name, i mean c'mon",
+        "ban_ocg_reason": "has Forbidden in the name, i mean c'mon"
       },
       "card_images": [{
         "id": 33396948,
@@ -11077,8 +11077,8 @@
       "banlist_info": {
         "ban_tcg": "Forbidden",
         "ban_ocg": "Forbidden",
-        "ban_tcg_reason": "Aroma this sack",
-        "ban_ocg_reason": "Aroma this sack"
+        "ban_tcg_reason": "catch the Aroma off this sack",
+        "ban_ocg_reason": "catch the Aroma off this sack"
       },
       "card_images": [{
         "id": 21200905,
@@ -11149,6 +11149,104 @@
         "id": 83190280,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/83190280.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/83190280.jpg"
+      }]
+    }, {
+      "id": 85215458,
+      "name": "Blackwing - Kalut the Moon Shadow",
+      "type": "Effect Monster",
+      "desc": "During either player's Damage Step, when a \"Blackwing\" monster you control is attacking or being attacked: You can send this card from your hand to the Graveyard; that monster gains 1400 ATK until the end of this turn.",
+      "atk": 1400,
+      "def": 1000,
+      "level": 3,
+      "race": "Winged Beast",
+      "attribute": "DARK",
+      "archetype": "Blackwing",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "fuck cimoooooooo",
+        "ban_ocg_reason": "fuck cimoooooooo"
+      },
+      "card_images": [{
+        "id": 85215458,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/85215458.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/85215458.jpg"
+      }]
+    },
+    {
+      "id": 1357146,
+      "name": "Ronintoadin",
+      "type": "Effect Monster",
+      "desc": "Cannot be used as a Synchro Material. This card's name becomes \"Des Frog\" while it is on the field. If this card is in your Graveyard: You can banish 1 \"Frog\" monster from your Graveyard; Special Summon this card.",
+      "atk": 100,
+      "def": 2000,
+      "level": 2,
+      "race": "Aqua",
+      "attribute": "WATER",
+      "archetype": "Frog",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Sentenced by the Hauge for Frog FTK",
+        "ban_ocg_reason": "Sentenced by the Hauge for Frog FTK"
+      },
+      "card_images": [{
+        "id": 1357146,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/1357146.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/1357146.jpg"
+      }]
+    },
+    {
+      "id": 81278754,
+      "name": "Flip Flop Frog",
+      "type": "Effect Monster",
+      "desc": "Once per turn, you can flip this card into face-down Defense Position. When this card is flipped face-up, you can return monsters your opponent controls to their owners' hand up to the number of face-up \"Frog\" monsters you control, except \"Frog the Jam\".",
+      "atk": 500,
+      "def": 200,
+      "level": 2,
+      "race": "Aqua",
+      "attribute": "WATER",
+      "archetype": "Frog",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Did not wear flip flops in the A&W, also gun trafficking",
+        "ban_ocg_reason": "Did not wear flip flops in the A&W, also gun trafficking"
+      },
+      "card_images": [{
+        "id": 81278754,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/81278754.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/81278754.jpg"
+      }]
+    },
+    {
+      "id": 55591586,
+      "name": "Thunder Dragonduo",
+      "type": "Effect Monster",
+      "desc": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by banishing 1 LIGHT and 1 DARK monster from your GY. Once per turn, if a monster effect is activated in the hand: This card gains 300 ATK until the end of this turn. When this card destroys an opponent's monster by battle: You can banish 1 card from your GY; add 1 Thunder monster from your Deck to your hand. Once per turn, during your opponent's End Phase: You can target 1 of your banished cards; place it on the top or bottom of your Deck.",
+      "atk": 2800,
+      "def": 0,
+      "level": 8,
+      "race": "Thunder",
+      "attribute": "DARK",
+      "archetype": "Thunder Dragon",
+      "banlist_info": {
+        "ban_tcg": "Semi-Limited",
+        "ban_ocg": "Semi-Limited",
+        "ban_tcg_reason": "got Two Heads, don'it?",
+        "ban_ocg_reason": "got Two Heads, don'it?"
+      },
+      "card_images": [{
+        "id": 55591586,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/55591586.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/55591586.jpg"
+      }],
+      "card_prices": [{
+        "cardmarket_price": "0.16",
+        "tcgplayer_price": "0.23",
+        "ebay_price": "0.99",
+        "amazon_price": "0.70",
+        "coolstuffinc_price": "0.39"
       }]
     }
   ]
