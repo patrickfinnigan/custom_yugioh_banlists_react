@@ -2362,55 +2362,6 @@
       }]
     },
     {
-      "id": 51858306,
-      "name": "Eclipse Wyvern",
-      "type": "Effect Monster",
-      "desc": "If this card is sent to the Graveyard: Banish 1 Level 7 or higher LIGHT or DARK Dragon-Type monster from your Deck. If this card is banished from your Graveyard: You can add the monster banished by this card's effect to your hand.",
-      "atk": 1600,
-      "def": 1000,
-      "level": 4,
-      "race": "Dragon",
-      "attribute": "LIGHT",
-      "card_sets": [{
-          "set_name": "Dragons Collide Structure Deck",
-          "set_code": "SDDC-EN003",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "1.39"
-        },
-        {
-          "set_name": "Premium Gold",
-          "set_code": "PGLD-EN041",
-          "set_rarity": "Gold Rare",
-          "set_rarity_code": "(GUR)",
-          "set_price": "1.91"
-        },
-        {
-          "set_name": "Rise of the True Dragons Structure Deck",
-          "set_code": "SR02-EN015",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "1.49"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden"
-      },
-      "card_images": [{
-        "id": 51858306,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/51858306.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/51858306.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "0.22",
-        "tcgplayer_price": "0.48",
-        "ebay_price": "2.60",
-        "amazon_price": "1.82",
-        "coolstuffinc_price": "0.79"
-      }]
-    },
-    {
       "id": 67723438,
       "name": "Emergency Teleport",
       "type": "Spell Card",
@@ -2424,39 +2375,6 @@
         "id": 67723438,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/67723438.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/67723438.jpg"
-      }]
-    },
-    {
-      "id": 40177746,
-      "name": "Eva",
-      "type": "Effect Monster",
-      "desc": "If this card is sent to the GY: You can banish up to 2 other LIGHT Fairy monsters from your field and/or GY; add the same number of Level 2 or lower LIGHT Fairy monsters with different names from your Deck to your hand, except \"Eva\". You can only use this effect of \"Eva\" once per turn.",
-      "atk": 500,
-      "def": 200,
-      "level": 1,
-      "race": "Fairy",
-      "attribute": "LIGHT",
-      "card_sets": [{
-        "set_name": "Structure Deck: Wave of Light",
-        "set_code": "SR05-EN000",
-        "set_rarity": "Ultra Rare",
-        "set_rarity_code": "(UR)",
-        "set_price": "4.86"
-      }],
-      "banlist_info": {
-        "ban_tcg": "Limited"
-      },
-      "card_images": [{
-        "id": 40177746,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/40177746.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/40177746.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "1.49",
-        "tcgplayer_price": "3.39",
-        "ebay_price": "3.49",
-        "amazon_price": "8.45",
-        "coolstuffinc_price": "4.99"
       }]
     },
     {
@@ -8278,92 +8196,6 @@
       }]
     },
     {
-      "id": 82732705,
-      "name": "Skill Drain",
-      "type": "Trap Card",
-      "desc": "Activate by paying 1000 LP. Negate the effects of all face-up monsters while they are face-up on the field (but their effects can still be activated).",
-      "race": "Continuous",
-      "card_sets": [{
-          "set_name": "Battle Pack: Epic Dawn",
-          "set_code": "BP01-EN053",
-          "set_rarity": "Rare",
-          "set_rarity_code": "(R)",
-          "set_price": "12.27"
-        },
-        {
-          "set_name": "Battle Pack: Epic Dawn",
-          "set_code": "BP01-EN053",
-          "set_rarity": "Starfoil Rare",
-          "set_rarity_code": "(SFR)",
-          "set_price": "11.75"
-        },
-        {
-          "set_name": "Dark Crisis",
-          "set_code": "DCR-049",
-          "set_rarity": "Rare",
-          "set_rarity_code": "(R)",
-          "set_price": "10.54"
-        },
-        {
-          "set_name": "Dark Crisis",
-          "set_code": "DCR-EN049",
-          "set_rarity": "Rare",
-          "set_rarity_code": "(R)",
-          "set_price": "0.00"
-        },
-        {
-          "set_name": "Dark Revelation Volume 1",
-          "set_code": "DR1-EN211",
-          "set_rarity": "Rare",
-          "set_rarity_code": "(R)",
-          "set_price": "11.6"
-        },
-        {
-          "set_name": "Duel Terminal 3",
-          "set_code": "DT03-EN098",
-          "set_rarity": "Duel Terminal Normal Parallel Rare",
-          "set_rarity_code": "(DNPR)",
-          "set_price": "24.96"
-        },
-        {
-          "set_name": "Gold Series",
-          "set_code": "GLD1-EN044",
-          "set_rarity": "Common",
-          "set_rarity_code": "(C)",
-          "set_price": "13.23"
-        },
-        {
-          "set_name": "The Lost Art Promotion L",
-          "set_code": "LART-EN012",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "29.42"
-        },
-        {
-          "set_name": "Turbo Pack: Booster Eight",
-          "set_code": "TU08-EN001",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "55.2"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Limited"
-      },
-      "card_images": [{
-        "id": 82732705,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/82732705.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/82732705.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "6.02",
-        "tcgplayer_price": "9.01",
-        "ebay_price": "7.49",
-        "amazon_price": "14.99",
-        "coolstuffinc_price": "59.99"
-      }]
-    },
-    {
       "id": 52340444,
       "name": "Sky Striker Mecha - Hornet Drones",
       "type": "Spell Card",
@@ -10248,51 +10080,6 @@
       }]
     },
     {
-      "id": 5851097,
-      "name": "Vanity's Emptiness",
-      "type": "Trap Card",
-      "desc": "Neither player can Special Summon monsters. If a card is sent from the Deck or the field to your Graveyard: Destroy this card.",
-      "race": "Continuous",
-      "card_sets": [{
-          "set_name": "Legendary Collection 5D's Mega Pack",
-          "set_code": "LC5D-EN253",
-          "set_rarity": "Secret Rare",
-          "set_rarity_code": "(ScR)",
-          "set_price": "25.6"
-        },
-        {
-          "set_name": "Starstrike Blast",
-          "set_code": "STBL-EN076",
-          "set_rarity": "Short Print",
-          "set_rarity_code": "(SP)",
-          "set_price": "4.04"
-        },
-        {
-          "set_name": "The Secret Forces",
-          "set_code": "THSF-EN059",
-          "set_rarity": "Super Rare",
-          "set_rarity_code": "(SR)",
-          "set_price": "2.66"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Limited"
-      },
-      "card_images": [{
-        "id": 5851097,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/5851097.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/5851097.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "0.92",
-        "tcgplayer_price": "1.51",
-        "ebay_price": "1.88",
-        "amazon_price": "4.90",
-        "coolstuffinc_price": "1.99"
-      }]
-    },
-    {
       "id": 44910027,
       "name": "Victory Dragon",
       "type": "Effect Monster",
@@ -10445,27 +10232,6 @@
         "ebay_price": "1.52",
         "amazon_price": "1.31",
         "coolstuffinc_price": "0.25"
-      }]
-    },
-    {
-      "id": 81122844,
-      "name": "Wind-Up Carrier Zenmaity",
-      "type": "XYZ Monster",
-      "desc": "2 Level 3 monsters\nOnce per turn: You can detach 1 Xyz Material from this card; Special Summon 1 \"Wind-Up\" monster from your hand or Deck. When a face-up \"Wind-Up\" monster on the field is destroyed and sent to your Graveyard (except during the Damage Step): You can detach 1 Xyz Material from this card to target that monster; return that target to the hand.",
-      "atk": 1500,
-      "def": 1500,
-      "level": 3,
-      "race": "Machine",
-      "attribute": "WATER",
-      "archetype": "Wind-Up",
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Limited"
-      },
-      "card_images": [{
-        "id": 81122844,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/81122844.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/81122844.jpg"
       }]
     },
     {
@@ -11249,6 +11015,132 @@
         "id": 87327776,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/87327776.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/87327776.jpg"
+      }]
+    },
+    {
+      "id": 16923472,
+      "name": "Wind-Up Hunter",
+      "type": "Effect Monster",
+      "desc": "You can Tribute 1 face-up \"Wind-Up\" monster, except \"Wind-Up Hunter\"; send 1 random card from your opponent's hand to the Graveyard. This effect can only be used once while this card is face-up on the field.",
+      "atk": 1600,
+      "def": 500,
+      "level": 3,
+      "race": "Beast-Warrior",
+      "attribute": "DARK",
+      "archetype": "Wind-Up",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Directly contributes to handloops",
+        "ban_ocg_reason": "Directly contributes to handloops"
+      },
+      "card_images": [{
+        "id": 16923472,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/16923472.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/16923472.jpg"
+      }]
+    },
+    {
+      "id": 81122844,
+      "name": "Wind-Up Carrier Zenmaity",
+      "type": "XYZ Monster",
+      "desc": "2 Level 3 monsters\nOnce per turn: You can detach 1 Xyz Material from this card; Special Summon 1 \"Wind-Up\" monster from your hand or Deck. When a face-up \"Wind-Up\" monster on the field is destroyed and sent to your Graveyard (except during the Damage Step): You can detach 1 Xyz Material from this card to target that monster; return that target to the hand.",
+      "atk": 1500,
+      "def": 1500,
+      "level": 3,
+      "race": "Machine",
+      "attribute": "WATER",
+      "archetype": "Wind-Up",
+      "banlist_info": {
+        "ban_tcg": "Unlimited",
+        "ban_ocg": "Unlimited",
+        "ban_tcg_reason": "Wind-Up Hunter Banned",
+        "ban_ocg_reason": "Wind-Up Hunter Banned"
+      },
+      "card_images": [{
+        "id": 81122844,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/81122844.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/81122844.jpg"
+      }]
+    },
+    {
+      "id": 51858306,
+      "name": "Eclipse Wyvern",
+      "type": "Effect Monster",
+      "desc": "If this card is sent to the Graveyard: Banish 1 Level 7 or higher LIGHT or DARK Dragon-Type monster from your Deck. If this card is banished from your Graveyard: You can add the monster banished by this card's effect to your hand.",
+      "atk": 1600,
+      "def": 1000,
+      "level": 4,
+      "race": "Dragon",
+      "attribute": "LIGHT",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Elpy is Banned",
+        "ban_ocg_reason": "Elpy is Banned"
+      },
+      "card_images": [{
+        "id": 51858306,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/51858306.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/51858306.jpg"
+      }]
+    },
+    {
+      "id": 5851097,
+      "name": "Vanity's Emptiness",
+      "type": "Trap Card",
+      "desc": "Neither player can Special Summon monsters. If a card is sent from the Deck or the field to your Graveyard: Destroy this card.",
+      "race": "Continuous",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Shows no issue in OCG",
+        "ban_ocg_reason": "Shows no issue in OCG"
+      },
+      "card_images": [{
+        "id": 5851097,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/5851097.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/5851097.jpg"
+      }]
+    },
+    {
+      "id": 82732705,
+      "name": "Skill Drain",
+      "type": "Trap Card",
+      "desc": "Activate by paying 1000 LP. Negate the effects of all face-up monsters while they are face-up on the field (but their effects can still be activated).",
+      "race": "Continuous",
+      "banlist_info": {
+        "ban_tcg": "Semi-Limited",
+        "ban_ocg": "Semi-Limited",
+        "ban_tcg_reason": "Slight boost to Control decks",
+        "ban_ocg_reason": "Slight boost to Control decks"
+      },
+      "card_images": [{
+        "id": 82732705,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/82732705.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/82732705.jpg"
+      }]
+    },
+    {
+      "id": 40177746,
+      "name": "Eva",
+      "type": "Effect Monster",
+      "desc": "If this card is sent to the GY: You can banish up to 2 other LIGHT Fairy monsters from your field and/or GY; add the same number of Level 2 or lower LIGHT Fairy monsters with different names from your Deck to your hand, except \"Eva\". You can only use this effect of \"Eva\" once per turn.",
+      "atk": 500,
+      "def": 200,
+      "level": 1,
+      "race": "Fairy",
+      "attribute": "LIGHT",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Reduce easy negate potential in Drytron decks",
+        "ban_ocg_reason": "Reduce easy negate potential in Drytron decks"
+      },
+      "card_images": [{
+        "id": 40177746,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/40177746.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/40177746.jpg"
       }]
     }
   ]
