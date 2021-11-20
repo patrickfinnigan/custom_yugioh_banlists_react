@@ -12,6 +12,7 @@ import "./stylesheets/main.scss";
 import PublicBanlistView from "./views/PublicBanlistView.js";
 import BudgetBanlistView from "./views/BudgetBanlistView.js";
 import PauperBanlistView from "./views/PauperBanlistView.js";
+import HiddenArsenalBanlistView from "./views/HiddenArsenalBanlistView.js";
 import JokeBanlistView from "./views/JokeBanlistView.js";
 import TestView from "./views/TestView.js";
 import ContactTemp from "./views/ContactTemp.js";
@@ -21,9 +22,10 @@ var hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/public-banlist" component={PublicBanlistView} />
+      <Route path="/community-banlist" component={PublicBanlistView} />
       <Route path="/budget-banlist" component={BudgetBanlistView} />
       <Route path="/pauper-banlist" component={PauperBanlistView} />
+      <Route path="/hidden-arsenal-banlist" component={HiddenArsenalBanlistView} />
       <Route path="/joke-banlist" component={JokeBanlistView} />
       <Route path="/test-page" component={TestView} />
       <Route path="/contact" component={ContactTemp} />

@@ -1,0 +1,49 @@
+{
+    "data": [{
+            "id": 11722335,
+            "name": "Worm Xex",
+            "type": "Effect Monster",
+            "desc": "When this card is Normal Summoned, you can send 1 Reptile-Type \"Worm\" monster from your Deck to the Graveyard. If you control a face-up \"Worm Yagan\", this card cannot be destroyed by battle.",
+            "atk": 1800,
+            "def": 1000,
+            "level": 4,
+            "race": "Reptile",
+            "attribute": "LIGHT",
+            "archetype": "Worm",
+            "banlist_info": {
+              "ban_tcg": "Limited",
+              "ban_ocg": "Limited",
+              "ban_tcg_reason": "-PLACEHOLDER-",
+              "ban_ocg_reason": "-PLACEHOLDER-"
+            },
+            "card_images": [{
+                "id": 11722335,
+                "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/11722335.jpg",
+                "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/11722335.jpg"
+            }]
+        },
+        {
+            "id": 25771826,
+            "name": "Ally of Justice Garadholg",
+            "type": "Effect Monster",
+            "desc": "If this card battles a LIGHT monster, it gains 200 ATK during the Damage Step only.",
+            "atk": 1600,
+            "def": 400,
+            "level": 4,
+            "race": "Machine",
+            "attribute": "DARK",
+            "archetype": "Ally of Justice",
+            "banlist_info": {
+                "ban_tcg": "Forbidden",
+                "ban_ocg": "Forbidden",
+                "ban_tcg_reason": "-PLACEHOLDER-",
+                "ban_ocg_reason": "-PLACEHOLDER-"
+            },
+            "card_images": [{
+                "id": 25771826,
+                "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/25771826.jpg",
+                "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/25771826.jpg"
+            }]
+        }
+    ]
+}
