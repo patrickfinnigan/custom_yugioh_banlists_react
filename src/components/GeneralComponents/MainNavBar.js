@@ -12,8 +12,8 @@ export default function MainNavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/community-banlist">Community Banlist</Nav.Link>
+            <Nav.Link href="/common-charity">Common Charity</Nav.Link>
             <Nav.Link href="/budget-banlist">Budget Banlist</Nav.Link>
-            <Nav.Link href="/pauper-banlist">Pauper Banlist</Nav.Link>
             {/* <Nav.Link href="/test-page">Test Page</Nav.Link> */}
             <NavDropdown title="Other Links" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/hidden-arsenal-banlist">Hidden Arsenal Format</NavDropdown.Item>

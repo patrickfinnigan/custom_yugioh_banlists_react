@@ -24,7 +24,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/community-banlist" component={PublicBanlistView} />
       <Route path="/budget-banlist" component={BudgetBanlistView} />
-      <Route path="/pauper-banlist" component={PauperBanlistView} />
+      <Route path="/common-charity" component={PauperBanlistView} />
       <Route path="/hidden-arsenal-banlist" component={HiddenArsenalBanlistView} />
       <Route path="/joke-banlist" component={JokeBanlistView} />
       <Route path="/test-page" component={TestView} />

@@ -9029,49 +9029,6 @@
       }]
     },
     {
-      "id": 18326736,
-      "name": "Tellarknight Ptolemaeus",
-      "type": "XYZ Monster",
-      "desc": "2 or more Level 4 monsters\nOnce per Chain, during either player's turn: You can detach 3 Xyz Materials from this card; Special Summon from your Extra Deck, 1 Xyz Monster that is 1 Rank higher than this card, except a \"Number\" monster, by using this face-up card you control as the Xyz Material. (This is treated as an Xyz Summon. Xyz Materials attached to this card also become Xyz Materials on the Summoned monster.) You can detach 7 Xyz Materials from this card; skip your opponent's next turn. During each player's End Phase: You can attach 1 \"Stellarknight\" card from your Extra Deck to this card as a face-up Xyz Material.",
-      "atk": 550,
-      "def": 2600,
-      "level": 4,
-      "race": "Warrior",
-      "attribute": "LIGHT",
-      "archetype": "Stellarknight",
-      "card_sets": [{
-          "set_name": "Crossed Souls",
-          "set_code": "CROS-EN050",
-          "set_rarity": "Ultimate Rare",
-          "set_rarity_code": "(UtR)",
-          "set_price": "6.29"
-        },
-        {
-          "set_name": "Crossed Souls",
-          "set_code": "CROS-EN050",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "6.09"
-        }
-      ],
-      "banlist_info": {
-        "ban_tcg": "Forbidden",
-        "ban_ocg": "Forbidden"
-      },
-      "card_images": [{
-        "id": 18326736,
-        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/18326736.jpg",
-        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/18326736.jpg"
-      }],
-      "card_prices": [{
-        "cardmarket_price": "3.44",
-        "tcgplayer_price": "3.88",
-        "ebay_price": "20.80",
-        "amazon_price": "5.24",
-        "coolstuffinc_price": "0.00"
-      }]
-    },
-    {
       "id": 63101919,
       "name": "Tempest Magician",
       "type": "Synchro Monster",
@@ -10595,8 +10552,8 @@
       "desc": "Target 1 monster in your opponent's GY; banish it, and if you do, until the end of the next turn, its effects are negated, as well as the activated effects and effects on the field of monsters with the same original name.",
       "race": "Quick-Play",
       "banlist_info": {
-        "ban_tcg": "Unlimited",
-        "ban_ocg": "Unlimited",
+        "ban_tcg": "Semi-Limited",
+        "ban_ocg": "Semi-Limited",
         "ban_tcg_reason": "Since Crossout is Avalible",
         "ban_ocg_reason": "Since Crossout is Avalible"
       },
@@ -11141,6 +11098,110 @@
         "id": 40177746,
         "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/40177746.jpg",
         "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/40177746.jpg"
+      }]
+    },
+    {
+      "id": 55948544,
+      "name": "Judgment of the Pharaoh",
+      "type": "Trap Card",
+      "desc": "Pay half of your Life Points. Select and activate an appropriate effect which can be applied:\n● If \"Yu-Jo Friendship\" is in your Graveyard, until the end of this turn: your opponent cannot Normal Summon, Set, Flip Summon, or Special Summon a monster(s) or activate an Effect Monster's effect.\n● If \"Unity\" is in your Graveyard, until the end of this turn: negate the effects of all Spell and Trap Cards on your opponent's side of the field, and your opponent cannot activate or Set Spell or Trap Cards.",
+      "race": "Normal",
+      "banlist_info": {
+        "ban_tcg": "Forbidden",
+        "ban_ocg": "Forbidden",
+        "ban_tcg_reason": "Avoiding potential turn-ending effects",
+        "ban_ocg_reason": "Avoiding potential turn-ending effects"
+      },
+      "card_images": [{
+        "id": 55948544,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/55948544.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/55948544.jpg"
+      }]
+    },
+    {
+      "id": 18326736,
+      "name": "Tellarknight Ptolemaeus",
+      "type": "XYZ Monster",
+      "desc": "2 or more Level 4 monsters\nOnce per Chain, during either player's turn: You can detach 3 Xyz Materials from this card; Special Summon from your Extra Deck, 1 Xyz Monster that is 1 Rank higher than this card, except a \"Number\" monster, by using this face-up card you control as the Xyz Material. (This is treated as an Xyz Summon. Xyz Materials attached to this card also become Xyz Materials on the Summoned monster.) You can detach 7 Xyz Materials from this card; skip your opponent's next turn. During each player's End Phase: You can attach 1 \"Stellarknight\" card from your Extra Deck to this card as a face-up Xyz Material.",
+      "atk": 550,
+      "def": 2600,
+      "level": 4,
+      "race": "Warrior",
+      "attribute": "LIGHT",
+      "archetype": "Stellarknight",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Infinity Access no longer game-breaking",
+        "ban_ocg_reason": "Infinity Access no longer game-breaking"
+      },
+      "card_images": [{
+        "id": 18326736,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/18326736.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/18326736.jpg"
+      }]
+    }, {
+      "id": 99726621,
+      "name": "Tri-Brigade Shuraig the Ominous Omen",
+      "type": "Link Monster",
+      "desc": "2+ Beast, Beast-Warrior, and/or Winged Beast monsters\r\nIf this card is Special Summoned, or if another Beast, Beast-Warrior, or Winged Beast monster(s) is Special Summoned to your field: You can banish 1 card on the field. If this card is sent to the GY: You can add 1 Beast, Beast-Warrior, or Winged Beast monster from your Deck to your hand, whose Level is less than or equal to the number of your banished Beast, Beast-Warrior, and Winged Beast monsters. You can only use each effect of \"Tri-Brigade Shuraig the Ominous Omen\" once per turn.",
+      "atk": 3000,
+      "race": "Winged Beast",
+      "attribute": "DARK",
+      "archetype": "Tri-Brigade",
+      "linkval": 4,
+      "linkmarkers": [
+        "Left",
+        "Bottom-Left",
+        "Bottom-Right",
+        "Right"
+      ],
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Reduce banishment consistency of Tri-Brigades",
+        "ban_ocg_reason": "Reduce banishment consistency of Tri-Brigades"
+      },
+      "card_images": [{
+        "id": 99726621,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/99726621.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/99726621.jpg"
+      }]
+    }, {
+      "id": 52947044,
+      "name": "Fusion Destiny",
+      "type": "Spell Card",
+      "desc": "Fusion Summon 1 Fusion Monster from your Extra Deck that lists a \"Destiny HERO\" monster as material, using monsters from your hand or Deck as Fusion Material, but destroy it during the End Phase of the next turn, also for the rest of this turn after this card resolves, you cannot Special Summon monsters, except DARK \"HERO\" monsters. You can only activate 1 \"Fusion Destiny\" per turn.",
+      "race": "Normal",
+      "archetype": "Destiny HERO",
+      "banlist_info": {
+        "ban_tcg": "Limited",
+        "ban_ocg": "Limited",
+        "ban_tcg_reason": "Reduce consistency of DPE access",
+        "ban_ocg_reason": "Reduce consistency of DPE access"
+      },
+      "card_images": [{
+        "id": 52947044,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/52947044.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/52947044.jpg"
+      }]
+    },
+    {
+      "id": 65681983,
+      "name": "Crossout Designator",
+      "type": "Spell Card",
+      "desc": "Declare 1 card name; banish 1 of that declared card from your Main Deck, and if you do, negate its effects, as well as the activated effects and effects on the field of cards with the same original name, until the end of this turn. You can only activate 1 \"Crossout Designator\" per turn.",
+      "race": "Quick-Play",
+      "banlist_info": {
+        "ban_tcg": "Semi-Limited",
+        "ban_ocg": "Semi-Limited",
+        "ban_tcg_reason": "Balance with Called By The Grave",
+        "ban_ocg_reason": "Balance with Called By The Grave"
+      },
+      "card_images": [{
+        "id": 65681983,
+        "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/65681983.jpg",
+        "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/65681983.jpg"
       }]
     }
   ]

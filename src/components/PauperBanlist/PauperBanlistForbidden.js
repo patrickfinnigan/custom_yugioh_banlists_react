@@ -44,8 +44,6 @@ export default function PauperBanlistForbidden() {
 
     if (Object.values(raritySearch).includes("(C)")) {
       return;
-    } else if (Object.values(raritySearch).includes("(R)")) {
-      return;
     } else if (Object.values(raritySearch).includes("(SP)")) {
       return;
     }
@@ -71,7 +69,8 @@ export default function PauperBanlistForbidden() {
     <>
       <Card>
         <Card.Body>
-          <h2>Forbidden: No avalible Common or Rare printings</h2>
+          <h2>Forbidden</h2>
+          <p>The following cards are forbidden in Common Charity format due to not having any avalible common printings. </p>
           <div className="user-container">
             <Table bordered>
               <PauperBanlistLable />
