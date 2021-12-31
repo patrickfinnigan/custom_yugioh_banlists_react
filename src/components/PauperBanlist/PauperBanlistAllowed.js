@@ -18,7 +18,7 @@ import TrapCards from "./TrapCards.js";
 
 import { YGoService } from "../../services/ygopro_axios.js";
 
-export default function PauperBanlistForbidden() {
+export default function PauperBanlistAllowed() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -38,44 +38,39 @@ export default function PauperBanlistForbidden() {
 
     let raritySearch = {
       ...card_sets
-        .filter((set) => set.set_rarity !== undefined)
-        // .filter(
-        //   (set) =>
-        //     set.set_rarity_code === "(C)" || set.set_rarity_code === "(SP)"
-        //   // ||
-        //   // set.set_rarity === undefined
-        // )
+        // .filter((set) => set.set_rarity !== undefined)
+        .filter(
+          (set) =>
+            set.set_rarity_code === "(C)" ||
+            set.set_rarity_code === "(SP)" ||
+            set.set_rarity === undefined
+        )
         .map((set) => set.set_rarity_code),
     };
 
     let currentCardRarities = [];
 
     if (Object.values(raritySearch).includes("(C)")) {
-      return;
+      currentCardRarities = ["common, "];
     } else if (Object.values(raritySearch).includes("(SP)")) {
+      currentCardRarities = ["shorted, "];
+    } else {
       return;
-    } 
-    // else if (Object.values(raritySearch).includes(undefined)) {
-    //   currentCardRarities = ["ERROR"];
-    // } 
-    else {
-      currentCardRarities = [""];
     }
 
-    // for (const [key, value] of Object.entries(raritySearch)) {
-    //   if (
-    //     currentCardRarities.indexOf(
-    //       value.replace("(", "").replace(")", ", ")
-    //     ) !== -1
-    //   ) {
-    //     return;
-    //   } else {
-    //     currentCardRarities += value.replace("(", "").replace(")", ", ");
-    //   }
-    // }
+    for (const [key, value] of Object.entries(raritySearch)) {
+      if (
+        currentCardRarities.indexOf(
+          value.replace("(", "").replace(")", ", ")
+        ) !== -1
+      ) {
+        return;
+      } else {
+        currentCardRarities += value.replace("(", "").replace(")", ", ");
+      }
+    }
 
-    // return currentCardRarities.slice(0, -2);
-    return currentCardRarities;
+    return currentCardRarities.slice(0, -2);
   }
 
   return (
@@ -84,13 +79,8 @@ export default function PauperBanlistForbidden() {
         <Card.Body>
           <h2>Common Charity</h2>
           <p>
-            The following cards are forbidden in Common Charity format due to
-            not having any avalible common printings.
-            {" "}
-            If you see any errors or missing cards, it's most likely due to something weird with
-            how the API interacts with the JS script. Please let me know right away if you see 
-            anything wrong. 
-            {" "}
+            The following cards are allowed in Common Charity because they have
+            had a Common printing at some point.{" "}
           </p>
           <div className="user-container">
             <Table bordered>

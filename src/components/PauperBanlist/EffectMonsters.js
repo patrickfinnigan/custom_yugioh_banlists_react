@@ -14,7 +14,7 @@ export default function EffectMonsters({
         </a>
       </th>
       <th className={["normal-weight-text status"]}>{status}</th>
-      <th className={["normal-weight-text rarity"]}>{rarity}</th>
+      {/* <th className={["normal-weight-text rarity"]}>{rarity}</th> */}
     </tr>
   );
 }
